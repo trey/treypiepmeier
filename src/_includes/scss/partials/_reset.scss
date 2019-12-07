@@ -1,0 +1,25 @@
+/* stylelint-disable selector-list-comma-newline-after */
+@import 'vendor/normalize';
+
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+html { box-sizing: border-box; }
+
+*, *::before, *::after { box-sizing: inherit; }
+
+// http://css-tricks.com/links-inline-svg-staying-target-events/
+a > svg { pointer-events: none; }
+
+// https://absolutely.every-layout.dev/rudiments/axioms/
+* { max-width: 60ch; }
+
+html,
+body,
+div,
+header,
+nav,
+main,
+footer,
+hr { max-width: none; }
+
+// https://absolutely.every-layout.dev/layouts/stack/#line-height-and-modular-scale
+body { line-height: 1.5; }
