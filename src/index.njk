@@ -11,3 +11,12 @@ description: My cool webpage.
      <li>{{ item.name | markdown | safe }}</li>
      {% endfor %}
 </ul>
+
+<h2>Blog Tags!</h2>
+
+<ul>
+{% for tag in collections.tagList %}
+     {% set tagUrl %}/words/tag/{{ tag }}/{% endset %}
+     <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>

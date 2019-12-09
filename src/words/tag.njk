@@ -1,0 +1,34 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+    - tagList
+  addAllPagesToCollections: true
+layout: layouts/base.njk
+renderData:
+  title: Tagged “{{ tag }}”
+permalink: /words/tag/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”!!</h1>
+
+{% set postslist = collections[ tag ] %}
+
+<ul reversed class="postlist">
+{% for post in postslist | reverse %}
+    <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+        <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+        {% for tag in post.data.tags %}
+            {%- if tag != "posts" -%}
+                {% set tagUrl %}/words/tag/{{ tag }}/{% endset %}
+                <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+            {%- endif -%}
+        {% endfor %}
+    </li>
+{% endfor %}
+</ol>

@@ -8,6 +8,8 @@ module.exports = function(eleventyConfig) {
     // Copy unaltered original images.
     eleventyConfig.addPassthroughCopy('src/img');
 
+    eleventyConfig.addCollection('tagList', require('./getTagList'));
+
     eleventyConfig.addFilter('readableDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
     });

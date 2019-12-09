@@ -2,7 +2,7 @@
 layout: layouts/words.njk
 title: "Wizard and Glass"
 date: 2017-04-28
-categories: review
+tags: review
 ---
 
 I could do without this book. The beginning of it is fine, but it's just the end of The Waste Lands. There's no reason for this part to be in a separate book (other than that King said that part of the story wasn't in him yet).
