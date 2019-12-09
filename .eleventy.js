@@ -1,6 +1,6 @@
 const MarkdownIt = require('markdown-it');
 const md = new MarkdownIt();
-const { DateTime } = require("luxon");
+const { DateTime } = require('luxon');
 
 module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('markdown', value => md.renderInline(value));
