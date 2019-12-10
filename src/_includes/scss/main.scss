@@ -10,3 +10,7 @@ body {
 }
 
 code { @include gradient($body-color); }
+
+footer {
+    margin-top: 5rem;
+}
