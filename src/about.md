@@ -4,7 +4,7 @@ title: About Trey
 description: What is Trey about anyway.
 eleventyNavigation:
   key: About
-  order: 3
+  order: 4
 ---
 
 # {{title}}

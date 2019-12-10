@@ -13,6 +13,8 @@ module.exports = function (collection) {
                 case 'nav':
                 case 'post':
                 case 'posts':
+                case 'words':
+                case 'solutions':
                     return false;
                 }
 

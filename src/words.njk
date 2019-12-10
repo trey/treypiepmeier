@@ -1,6 +1,7 @@
 ---
 layout: layouts/base.njk
 title: Trey’s Thoughts
+section: words
 eleventyNavigation:
   key: Words
   order: 2
@@ -8,6 +9,6 @@ eleventyNavigation:
 
 <h1>Trey’s Thoughts</h1>
 
-{% set postslist = collections.posts %}
+{% set postslist = collections.words %}
 
-{% include "postslist.njk" %}
+{% include "postsList.njk" %}
