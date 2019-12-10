@@ -12,23 +12,13 @@ pagination:
   addAllPagesToCollections: true
 layout: layouts/base.njk
 renderData:
-  title: Tagged “{{ tag }}”
+  title: Trey’s Thoughts Tagged “{{ tag }}”
 permalink: /words/tag/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}”</h1>
+<h1>Trey’s Thoughts Tagged “{{ tag }}”</h1>
 
 {% set postslist = collections[tag] %}
 
-<ul class="postlist">
-{% for post in postslist | reverse %}
-    <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-        <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-        {% for tag in post.data.tags %}
-            {%- if tag != "posts" -%}
-                {% set tagUrl %}/words/tag/{{ tag }}/{% endset %}
-                <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-            {%- endif -%}
-        {% endfor %}
-    </li>
-{% endfor %}
-</ol>
+{% include "postslist.njk" %}
+
+<p><a href="/words/">All posts</a></p>

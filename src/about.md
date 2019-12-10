@@ -8,3 +8,5 @@ eleventyNavigation:
 ---
 
 # {{title}}
+
+Here’s some words about yours truly.
