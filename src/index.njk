@@ -1,22 +1,10 @@
 ---
 layout: layouts/base.njk
-title: Blank Slate v2
+title: Trey Piepmeier
 description: My cool webpage.
+eleventyNavigation:
+  key: Home
+  order: 1
 ---
 
-<h1>Hello, {{ title }}!</h1>
-
-<ul>
-     {% for item in list.items %}
-     <li>{{ item.name | markdown | safe }}</li>
-     {% endfor %}
-</ul>
-
-<h2>Blog Tags!</h2>
-
-<ul>
-{% for tag in collections.tagList %}
-     {% set tagUrl %}/words/tag/{{ tag }}/{% endset %}
-     <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
-{% endfor %}
-</ul>
+<h1>{{ title }}</h1>

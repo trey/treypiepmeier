@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+title: Trey’s Thoughts
+eleventyNavigation:
+  key: Words
+  order: 2
+---
+
+<h1>Trey’s Thoughts</h1>
+
+<ul>
+    {%- for post in collections.posts %}
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+    {%- endfor %}
+</ul>
+
+<h2>Tags</h2>
+
+<ul>
+{% for tag in collections.tagList %}
+    {% set tagUrl %}/words/tag/{{ tag }}/{% endset %}
+    <li><a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a></li>
+{% endfor %}
+</ul>
