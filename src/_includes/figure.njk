@@ -1,0 +1,10 @@
+{% comment %}
+This feels like a good way to deal with not sending a bigger image file than
+is needed.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+{% endcomment %}
+<figure>
+{% include img.njk %}
+<figcaption>{{ caption }}</figcaption>
+</figure>
