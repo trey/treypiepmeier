@@ -4,11 +4,39 @@ const fs = require('fs');
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 
+const Jimp = require('jimp');
+const fg = require('fast-glob');
+const wordsImagesPath = 'img/words';
+const wordsImages = fg.sync([`src/${wordsImagesPath}/*`], { objectMode: true });
+
+// Generate different sized image files.
+for (let image of wordsImages) {
+    const regex = /\.[^/.]+$/;
+    const fileName = image.name.replace(regex, '');
+    const fileExtension = image.name.match(regex).pop();
+    const fileVersion = size => `${wordsImagesPath}/${fileName}-${size}${fileExtension}`;
+
+    Jimp.read(image.path, (err, img) => {
+        if (err) throw err;
+        img.resize(2200, Jimp.AUTO).quality(60).write(`dist/${fileVersion('large')}`);
+    });
+    Jimp.read(image.path, (err, img) => {
+        if (err) throw err;
+        img.resize(1600, Jimp.AUTO).quality(60).write(`dist/${fileVersion('medium')}`);
+    });
+    Jimp.read(image.path, (err, img) => {
+        if (err) throw err;
+        img.resize(800, Jimp.AUTO).quality(60).write(`dist/${fileVersion('small')}`);
+    });
+    // Optimize original image
+    Jimp.read(image.path, (err, img) => {
+        if (err) throw err;
+        img.quality(60).write(`dist/${fileVersion('original')}`);
+    });
+}
+
 module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('markdown', value => md.renderInline(value));
-
-    // Copy unaltered original images.
-    eleventyConfig.addPassthroughCopy('src/img');
 
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);

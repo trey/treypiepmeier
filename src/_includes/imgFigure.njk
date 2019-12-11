@@ -1,0 +1,13 @@
+{% comment %}
+This feels like a good way to deal with not sending a bigger image file than
+is needed.
+
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/figure
+{% endcomment %}
+<figure>
+    <img src="{{ name }}-original.{{ ext }}" alt="{{ caption }}"
+         srcset="{{ name }}-small.{{ ext }} 800w,
+                 {{ name }}-medium.{{ ext }} 1600w,
+                 {{ name }}-large.{{ ext }} 2200w" />
+    <figcaption>{{ caption }}</figcaption>
+</figure>
