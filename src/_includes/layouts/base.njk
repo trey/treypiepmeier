@@ -3,7 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>{{ renderData.title or title or metadata.title }}</title>
+    <title>
+        {{ renderData.title or title or metadata.title }}
+        {% if section == 'words' %} / Trey’s Thoughts{% endif %}
+        {% if section == 'solutions' %} / Solutions Log{% endif %}
+    </title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="/css/main.css" />
