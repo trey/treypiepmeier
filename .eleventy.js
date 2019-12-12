@@ -46,8 +46,14 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 
-    eleventyConfig.addFilter('readableDate', dateObj => {
+    // https://moment.github.io/luxon/docs/manual/parsing.html#parsing-technical-formats
+
+    eleventyConfig.addFilter('fullDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
+    });
+
+    eleventyConfig.addFilter('shortDate', dateObj => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
     // Make 404 page work with `eleventy --serve`
