@@ -1,5 +1,4 @@
 ---
-layout: layouts/words.njk
 title: "Photo Op"
 date: "2017-01-06"
 tags: gratitude

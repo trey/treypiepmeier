@@ -1,5 +1,4 @@
 {
-  "tags": [
-    "solutions"
-  ]
+  "layout": "layouts/solutions.njk",
+  "tags": ["solutions"]
 }

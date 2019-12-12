@@ -1,5 +1,4 @@
 {
-  "tags": [
-    "words"
-  ]
+  "layout": "layouts/words.njk",
+  "tags": ["words"]
 }

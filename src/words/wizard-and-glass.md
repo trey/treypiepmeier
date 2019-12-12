@@ -1,5 +1,4 @@
 ---
-layout: layouts/words.njk
 title: Wizard and Glass
 date: 2017-04-28
 tags: review

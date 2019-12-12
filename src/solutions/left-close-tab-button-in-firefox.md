@@ -1,5 +1,4 @@
 ---
-layout: layouts/words.njk
 title: Close Tab Icon/Button on the Left in Firefox
 date: 2019-09-26
 tags: browser

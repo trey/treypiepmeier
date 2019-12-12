@@ -1,5 +1,4 @@
 ---
-layout: layouts/words.njk
 title: Instant Photos
 date: 2014-08-28
 tags: gratitude
