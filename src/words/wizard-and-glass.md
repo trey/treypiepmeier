@@ -4,7 +4,7 @@ date: 2017-04-28
 tags: review
 ---
 
-{% include img.njk, name: '/img/words/wizard-and-glass', ext: 'jpg', caption: 'The cover to Wizard and Glass' %}
+{% include img.liquid, name: 'wizard-and-glass', caption: 'The cover to Wizard and Glass' %}
 
 I could do without this book. The beginning of it is fine, but it's just the end of The Waste Lands. There's no reason for this part to be in a separate book (other than that King said that part of the story wasn't in him yet).
 
