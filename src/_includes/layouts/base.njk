@@ -5,8 +5,9 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>
         {{ renderData.title or title or metadata.title }}
-        {% if section == 'words' %} / Trey’s Thoughts{% endif %}
-        {% if section == 'solutions' %} / Solutions Log{% endif %}
+        {% if section == 'words' and not sectionBase %} / Trey’s Thoughts{% endif %}
+        {% if section == 'solutions' and not sectionBase %} / Solutions Log{% endif %}
+        {% if page.url != '/' %} / {% endif %}Trey Piepmeier
     </title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
