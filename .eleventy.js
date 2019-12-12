@@ -1,5 +1,3 @@
-const MarkdownIt = require('markdown-it');
-const md = new MarkdownIt();
 const fs = require('fs');
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
@@ -36,7 +34,10 @@ for (let image of wordsImages) {
 }
 
 module.exports = function(eleventyConfig) {
-    eleventyConfig.addFilter('markdown', value => md.renderInline(value));
+    let markdownIt = require('markdown-it');
+    let markdownLib = markdownIt({ html: true }).use(require('markdown-it-footnote'));
+
+    eleventyConfig.setLibrary('md', markdownLib);
 
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);
