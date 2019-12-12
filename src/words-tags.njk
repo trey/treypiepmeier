@@ -13,15 +13,15 @@ pagination:
     - tagList
   addAllPagesToCollections: true
 layout: layouts/base.njk
-section: solutions
+section: words
 renderData:
-  title: Solutions Log Tagged “{{ tag }}”
-permalink: /solutions/tag/{{ tag }}/
+  title: Trey’s Thoughts Tagged “{{ tag }}”
+permalink: /words/tag/{{ tag }}/
 ---
 <h1>{{ renderData.title }}</h1>
 
 {% set postslist = collections[tag] %}
 
-{% include "postsList.njk" %}
+{% include 'posts-list.njk' %}
 
-<p><a href="/solutions/">All posts</a></p>
+<p><a href="/words/">All posts</a></p>
