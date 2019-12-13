@@ -11,3 +11,28 @@ section: words
 <div class="blog">
 {{ content | safe }}
 </div>
+
+{% set currentItemIndex = 0 %}
+
+{% for item in collections.words %}
+    {% if item.url == page.url %}
+        {% set currentItemIndex = loop.index0 %}
+    {% endif %}
+{% endfor %}
+
+{% set prevItemIndex = currentItemIndex - 1 %}
+{% set nextItemIndex = currentItemIndex + 1 %}
+
+{% if prevItemIndex >= 0 %}
+    {% set prev = collections.words[prevItemIndex] %}
+    <div class="prev">
+        <a href="{{ prev.url }}">&larr; {{ prev.data.title }}</a>
+    </div>
+{% endif %}
+
+{% if nextItemIndex < collections.words.length %}
+    {% set next = collections.words[nextItemIndex] %}
+    <div class="next">
+        <a href="{{ next.url }}">{{ next.data.title }} &rarr;</a>
+    </div>
+{% endif %}
