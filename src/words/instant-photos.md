@@ -4,7 +4,7 @@ date: 2014-08-28
 tags: gratitude
 ---
 
-{% include img.liquid, name: 'livie-instax', caption: 'Livie on Instax' %}
+{% include components/img.liquid, name: 'livie-instax', caption: 'Livie on Instax' %}
 
 I have [Hartwell][hartwell] to thank for my newest obsession. While I was at [Giant Conf][giant], he gave me an old Polaroid 600 camera. Ever since I snapped [my first, terrible photo][tweet] with film from [The Impossible Project][ip], I've been hooked. Maybe it's the whole analog thing that makes vinyl so appealing to some people. Perhaps it's the instant gratification of having a real photograph that was developed using nasty, caustic chemicals in your hands mere seconds after snapping it and then the anticipation [^1] to see if the photo turned out [^2]. Perhaps it's the peace of mind knowing that this isn't something I have to worry about backing up. This isn't something I'll worry about its metadata getting corrupted or a different version saved over the original or accidentally tweeting the wrong photo. This is more personal. Buy a few [cheap plastic binder sheets][binder-sheets] at Target and *boom*, you've got yourself a photo album. You didn't have to upload the pictures somewhere and have it shipped. You made it with your own two hands in minutes. Sure, they're mostly crappy pictures, but that limitation feels liberating.
 

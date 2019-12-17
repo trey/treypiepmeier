@@ -6,13 +6,13 @@ tags: event
 
 I think I first heard of [HeroesCon][hc] when someone at [Captain's Comics][cc][^1] mentioned that it would be a good place to take comics to get [graded][cgc] and not have to mail them in first.
 
-[{% include img.liquid, name: 'heroescon-2014-1', caption: 'There Were Lots of People at HeroesCon' %}](https://www.flickr.com/photos/trey_piepmeier/14508382962/)
+[{% include components/img.liquid, name: 'heroescon-2014-1', caption: 'There Were Lots of People at HeroesCon' %}](https://www.flickr.com/photos/trey_piepmeier/14508382962/)
 
 It was again [Captain's that brought it to my attention this year][capttweet]. Olivia and I both thought it might be fun, but we didn't make any concrete plans. Since it was a short drive and you could buy tickets at the door, we decided to play it Thor's brother[^3].
 
 Then it started seeming even cooler when I heard things like [this][dharbin] and also realized that I could get my Bone single volume edition signed by [Jeff Smith][jeffsmith]. And, hey, I used the fact that my brother had my copy as a chance to see the elusive so-and-so for the first time in over a year.
 
-[{% include img.liquid, name: 'heroescon-2014-2', caption: 'Livie took this great shot of me getting my Bone complete edition signed by Jeff Smith.' %}](https://www.flickr.com/photos/livie_leigh/14321561810)
+[{% include components/img.liquid, name: 'heroescon-2014-2', caption: 'Livie took this great shot of me getting my Bone complete edition signed by Jeff Smith.' %}](https://www.flickr.com/photos/livie_leigh/14321561810)
 
 Long story short, we went and had a fabulous time. The comic book celebrities were friendly and gracious[^4]. The crowd was surprisingly diverse. We saw a male Wonder Woman and lots of women playing male characters like Loki. We had lunch next to an old grey couple who were obviously seasoned professionals and had checklists and stacks of comics that they were getting signed or collecting or both. We saw lots of families.
 

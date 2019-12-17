@@ -1,0 +1,24 @@
+{% set currentItemIndex = 0 %}
+
+{% for item in collection %}
+    {% if item.url == page.url %}
+        {% set currentItemIndex = loop.index0 %}
+    {% endif %}
+{% endfor %}
+
+{% set prevItemIndex = currentItemIndex - 1 %}
+{% set nextItemIndex = currentItemIndex + 1 %}
+
+{% if prevItemIndex >= 0 %}
+    {% set prev = collection[prevItemIndex] %}
+    <div class="prev">
+        <a href="{{ prev.url }}">&larr; {{ prev.data.title }}</a>
+    </div>
+{% endif %}
+
+{% if nextItemIndex < collection.length %}
+    {% set next = collection[nextItemIndex] %}
+    <div class="next">
+        <a href="{{ next.url }}">{{ next.data.title }} &rarr;</a>
+    </div>
+{% endif %}
