@@ -4,7 +4,7 @@ permalink: "words/{{ page.date | date: '%Y/%m' }}/{{ title | slug }}/"
 section: words
 ---
 
-<h1>{{ title }}</h1>
+<h1>{{ fullTitle or title }}</h1>
 
 <p><i>{{ page.date | fullDate }}</i></p>
 

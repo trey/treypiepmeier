@@ -14,13 +14,13 @@
     <li class="next">
     {% if nextItemIndex < collection.length %}
         {% set next = collection[nextItemIndex] %}
-        <a href="{{ next.url }}">&larr; {{ next.data.title }}</a>
+        <a href="{{ next.url }}">&larr; {{ next.data.fullTitle or next.data.title }}</a>
     {% endif %}
     </li>
     <li class="prev">
     {% if prevItemIndex >= 0 %}
         {% set prev = collection[prevItemIndex] %}
-        <a href="{{ prev.url }}">{{ prev.data.title }} &rarr;</a>
+        <a href="{{ prev.url }}">{{ prev.data.fullTitle or prev.data.title }} &rarr;</a>
     {% endif %}
     </li>
 </ul>
