@@ -6,7 +6,7 @@ tags: event
 
 I think I first heard of [HeroesCon][hc] when someone at [Captain’s Comics][cc][^1] mentioned that it would be a good place to take comics to get [graded][cgc] and not have to mail them in first.
 
-[{% include components/img, name: 'heroescon-2014-1', caption: 'There Were Lots of People at HeroesCon' %}](https://www.flickr.com/photos/trey_piepmeier/14508382962/)
+[{% include components/img name: 'heroescon-2014-1' caption: 'There Were Lots of People at HeroesCon' %}](https://www.flickr.com/photos/trey_piepmeier/14508382962/)
 
 It was again [Captain’s that brought it to my attention this year][capttweet]. Olivia and I both thought it might be fun, but we didn’t make any concrete plans. Since it was a short drive and you could buy tickets at the door, we decided to play it Thor’s brother[^3].
 

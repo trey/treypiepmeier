@@ -1,4 +1,4 @@
-<img src="/img/{{ section }}/{{ name }}-original.{{ ext | default: 'jpg' }}" alt="{{ caption }}"
+<img {% if imgTitle %}title="{{ imgTitle }}"{% endif %} src="/img/{{ section }}/{{ name }}-original.{{ ext | default: 'jpg' }}" alt="{{ caption }}"
      srcset="/img/{{ section }}/{{ name }}-small.{{ ext | default: 'jpg' }} 800w,
              /img/{{ section }}/{{ name }}-medium.{{ ext | default: 'jpg' }} 1600w,
              /img/{{ section }}/{{ name }}-large.{{ ext | default: 'jpg' }} 2200w" />

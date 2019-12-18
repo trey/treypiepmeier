@@ -6,7 +6,7 @@ date: 2017-01-11
 tags: review
 ---
 
-{% include components/img name: 'small-world', caption: 'The cover of Locke & Key: Small World' %}
+{% include components/img name: 'small-world' caption: 'The cover of Locke & Key: Small World' %}
 
 This was a fun and mostly lighthearted story. The Locke & Key one-offs have gone different ways in terms of tone. This story ties into [one of the heavier ones](https://www.goodreads.com/book/show/13647975-locke-and-key), but only hints at its heaviness.
 
