@@ -1,6 +1,7 @@
 const fs = require('fs');
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 
 const Jimp = require('jimp');
 const fg = require('fast-glob');
@@ -43,6 +44,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setDataDeepMerge(true);
 
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+    eleventyConfig.addPlugin(syntaxHighlight);
 
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 

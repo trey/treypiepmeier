@@ -8,7 +8,16 @@ body {
     padding: 1rem 2rem;
 }
 
-code { @include gradient($body-color); }
+figure {
+    margin-left: 0;
+    margin-right: 0;
+
+    figcaption {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 0.8em;
+        font-style: italic;
+    }
+}
 
 footer {
     margin-top: 5rem;
