@@ -5,14 +5,10 @@
         <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
         {% for tag in post.data.tags %}
             {%- if tag != "words" and tag != "solutions" -%}
-                {% if section == "words" %}
-                {% set tagUrl %}/words/tag/{{ tag }}/{% endset %}
-                {% else %}
-                {% set tagUrl %}/solutions/tag/{{ tag }}/{% endset %}
-                {% endif %}
+                {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
                 <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
             {%- endif -%}
         {% endfor %}
     </li>
 {% endfor %}
-</ol>
+</ul>

@@ -8,6 +8,8 @@ section: words
 
 <p><i>{{ page.date | fullDate }}</i></p>
 
+{% include 'components/tag-list.njk' %}
+
 <div class="blog">
 {{ content | safe }}
 </div>
