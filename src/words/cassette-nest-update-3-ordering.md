@@ -11,7 +11,7 @@ It often takes me a while to figure out what all I need to order. How many rolls
 
 Here’s what my `/ready` page on Cassette Nest looks like right now:
 
-{% include components/img name: 'ready-to-process' ext: 'png' caption: 'A table showing film ready to process.' %}
+{% include components/img name: 'ready-to-process' ext: 'png' alt: 'A table showing film ready to process.' %}
 
 I can quickly see everything I need to place an order. Everything is tallied up both for film type (Color, Slide, Black & White) and format (35mm, 120), and how many things (if any) need to be pushed or pulled.
 

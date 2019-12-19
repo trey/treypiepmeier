@@ -4,8 +4,7 @@ date: 2019-07-17
 tags: technical
 ---
 
-{% include components/figure name: 'rosie' caption: 'It looks pink in some light
-' %}
+{% include components/figure name: 'rosie' caption: 'It looks pink in some light' alt: 'The lid of my new MacBook Air' %}
 
 I recently had (let’s call it) a change of employment that left me without a modern laptop. I have a nice iMac, but I really hate being tied to a desk at home all day. I get cabin fever almost immediately. I tried using my circa-2011 MacBook Air, but it quickly became clear that it was too sluggish.
 

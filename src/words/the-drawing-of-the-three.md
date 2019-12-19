@@ -4,7 +4,7 @@ date: 2017-01-01
 tags: review
 ---
 
-{% include components/img name: 'tdott' caption='The cover of The Drawing of the Three' %}
+{% include components/img name: 'tdott' alt: 'The cover of The Drawing of the Three' %}
 
 I have mixed feelings about this book. On one hand, I’ve considered it my favorite of The Dark Tower series for a long time. On the other hand, it has quite a few things in it that bug me.
 

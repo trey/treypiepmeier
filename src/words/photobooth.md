@@ -4,7 +4,7 @@ date: 2016-11-19
 tags: review
 ---
 
-{% include components/img name: 'photobooth' caption='The cover of Photobooth: A Biography' %}
+{% include components/img name: 'photobooth' alt: 'The cover of Photobooth: A Biography' %}
 
 I discovered this book on a visit to [Quimby’s Bookstore](http://www.quimbys.com/) in Chicago. They had a photo booth in the store that I found out (after Livie and I used it) was a real, “chemical” booth. The photos took several minutes to come out of the machine and they were still a little wet when they did. Considering I’m currently in the depths of an obsession with film photography, this was fascinating to me. On the outside of the booth was an advertisement for this book.
 
