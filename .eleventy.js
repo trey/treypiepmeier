@@ -15,23 +15,31 @@ for (let image of wordsImages) {
     const fileExtension = image.name.match(regex).pop();
     const fileVersion = size => `${wordsImagesPath}/${fileName}-${size}${fileExtension}`;
 
-    Jimp.read(image.path, (err, img) => {
-        if (err) throw err;
-        img.resize(2200, Jimp.AUTO).quality(60).write(`dist/${fileVersion('large')}`);
-    });
-    Jimp.read(image.path, (err, img) => {
-        if (err) throw err;
-        img.resize(1600, Jimp.AUTO).quality(60).write(`dist/${fileVersion('medium')}`);
-    });
-    Jimp.read(image.path, (err, img) => {
-        if (err) throw err;
-        img.resize(800, Jimp.AUTO).quality(60).write(`dist/${fileVersion('small')}`);
-    });
-    // Optimize original image
-    Jimp.read(image.path, (err, img) => {
-        if (err) throw err;
-        img.quality(60).write(`dist/${fileVersion('original')}`);
-    });
+    if (!fs.existsSync(`dist/${fileVersion('large')}`)) {
+        Jimp.read(image.path, (err, img) => {
+            if (err) throw err;
+            img.resize(2200, Jimp.AUTO).quality(60).write(`dist/${fileVersion('large')}`);
+        });
+    }
+    if (!fs.existsSync(`dist/${fileVersion('medium')}`)) {
+        Jimp.read(image.path, (err, img) => {
+            if (err) throw err;
+            img.resize(1600, Jimp.AUTO).quality(60).write(`dist/${fileVersion('medium')}`);
+        });
+    }
+    if (!fs.existsSync(`dist/${fileVersion('small')}`)) {
+        Jimp.read(image.path, (err, img) => {
+            if (err) throw err;
+            img.resize(800, Jimp.AUTO).quality(60).write(`dist/${fileVersion('small')}`);
+        });
+    }
+    if (!fs.existsSync(`dist/${fileVersion('original')}`)) {
+        // Optimize original image
+        Jimp.read(image.path, (err, img) => {
+            if (err) throw err;
+            img.quality(60).write(`dist/${fileVersion('original')}`);
+        });
+    }
 }
 
 module.exports = function(eleventyConfig) {
