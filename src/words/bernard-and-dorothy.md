@@ -4,7 +4,7 @@ date: 2015-08-29
 tags: gratitude
 ---
 
-[{% include components/img name: 'bernard-and-dorothy' caption: 'Bernard and Dorothy' %}][pic]
+{% include components/img name: 'bernard-and-dorothy' caption: 'Bernard and Dorothy' %}
 
 I woke up this morning with the noise of thumping music outside. I picked up my [Polaroid 100][p100] and walked over to see what was going on. It was the [Color Vibe 5k][colorvibe]. It seemed more like a rave.
 
@@ -14,7 +14,6 @@ Their names were Bernard and Dorothy. Bernard wanted me to know that his â€œHUâ€
 
 [^1]: One of the cool things about this peel-apart film is that even though I gave them the positive, I still have the negative to scan.
 
-[pic]: /img/bernard-and-dorothy.jpg
 [colorvibe]: http://www.thecolorvibe.com/greensboro.php
 [p100]: http://camerapedia.wikia.com/wiki/Polaroid_Land_Model_100
 [sx70]: http://camerapedia.wikia.com/wiki/Polaroid_SX-70
