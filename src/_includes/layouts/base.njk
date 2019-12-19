@@ -11,6 +11,12 @@
     </title>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    {% if section == 'words' or section == 'solutions' %}
+    <link rel="alternate" type="application/atom+xml" href="/feeds/{{ section }}.xml" />
+    {% else %}
+    <link rel="alternate" type="application/atom+xml" href="/feeds/words.xml" />
+    <link rel="alternate" type="application/atom+xml" href="/feeds/solutions.xml" />
+    {% endif %}
     <link rel="stylesheet" href="/css/main.css" />
 </head>
 

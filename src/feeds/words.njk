@@ -1,0 +1,18 @@
+---json
+{
+    "permalink": "feeds/words.xml",
+    "eleventyExcludeFromCollections": true,
+    "metadata": {
+        "title": "Trey’s Thoughts",
+        "subtitle": "This is Trey Piepmeier’s blog. He writes about photography and web development and music and being outside.",
+        "url": "https://treypiepmeier.com/words/",
+        "feedUrl": "https://treypiepmeier.com/feeds/words.xml",
+        "author": {
+            "name": "Trey Piepmeier",
+            "email": "boss@treylabs.com"
+        }
+    }
+}
+---
+{%- set collection = collections.words -%}
+{% include 'layouts/feeds.njk' %}

@@ -2,6 +2,7 @@ const fs = require('fs');
 const { DateTime } = require('luxon');
 const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
+const pluginRss = require('@11ty/eleventy-plugin-rss');
 
 const Jimp = require('jimp');
 const fg = require('fast-glob');
@@ -51,18 +52,17 @@ module.exports = function(eleventyConfig) {
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);
 
+    // Plugins
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
-
     eleventyConfig.addPlugin(syntaxHighlight);
+    eleventyConfig.addPlugin(pluginRss);
 
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 
     // https://moment.github.io/luxon/docs/manual/parsing.html#parsing-technical-formats
-
     eleventyConfig.addFilter('fullDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
     });
-
     eleventyConfig.addFilter('shortDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
