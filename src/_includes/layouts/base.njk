@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>
-        {{ fullTitle or renderData.title or title or metadata.title }}
+        {{ renderData.title or title or metadata.title }}
         {% if section == 'words' and not sectionBase %} / Trey’s Thoughts{% endif %}
         {% if section == 'solutions' and not sectionBase %} / Solutions Log{% endif %}
         {% if page.url != '/' %} / {% endif %}Trey Piepmeier

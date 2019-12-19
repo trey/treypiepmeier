@@ -1,6 +1,5 @@
 ---
-title: Photobooth
-fullTitle: 'Photobooth: A Biography'
+title: 'Photobooth: A Biography'
 date: 2016-11-19
 tags: review
 ---

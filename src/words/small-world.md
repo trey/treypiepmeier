@@ -1,7 +1,6 @@
 ---
 slug: small-world
-title: 'Small World'
-fullTitle: 'Locke & Key: Small World'
+title: 'Locke & Key: Small World'
 date: 2017-01-11
 tags: review
 ---
