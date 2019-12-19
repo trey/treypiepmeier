@@ -1,7 +1,7 @@
 ---
 title: JavaScript Component-Inspired Django Templates
 date: 2019-07-19
-tags: technical
+tags: [technical, cassettenest]
 ---
 
 When I was starting out writing [Cassette Nest][cn], I went back and forth with “real” code as well as prototypes using React and Vue.

@@ -1,0 +1,16 @@
+blockquote {
+    border-left: 0.3rem solid rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding-left: 1rem;
+
+    cite::before {
+        content: '—';
+        margin-left: 0;
+        margin-right: 0.3em;
+    }
+}
+
+code {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0.1rem;
+}
