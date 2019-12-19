@@ -26,7 +26,7 @@ I adjust the “Capture Time” in Lightroom.
 
 I print out a copy of each two-page spread of the notebook and keep it in a sheet protector with my negatives.
 
-{% include components/figure name: 'journaling-5' caption: 'Copied PhotoMemo pages with my 2018 annual index.' alt: 'PhotoMemo pages and annual index in sheet protectors ready to be loaded into a film binder.' %}
+{% include components/figure name: 'photo-memo-copies-and-index' caption: 'Copied PhotoMemo pages with my 2018 annual index.' alt: 'PhotoMemo pages and annual index in sheet protectors ready to be loaded into a film binder.' %}
 
 The journaling feature will take the place of recording things in a notebook, but I probably won’t give them up. Having an immediate hard-copy of that information is good piece of mind.
 
