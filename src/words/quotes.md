@@ -10,8 +10,6 @@ Here are my opinions on when you should use different kinds of quotation marks i
 - Double: `"`
 - Curly: `“`, `‘`, `’`, `”`
 
----
-
 ## Single-Quotes
 
 Efficiency and clean looks matter most with programming languages (Python, JavaScript, etc.). Use single quotes here.
@@ -35,8 +33,6 @@ Note the `'example'` within the Django code block nested in HTML here:
 ```
 {% endraw %}
 
----
-
 ## Double-Quotes
 
 HTML should use double-quotes. It’s more public ([view source](https://css-tricks.com/view-source/)), so it should feel a little more official. HTML feels old fashioned in a way that befits double quotes.
@@ -44,8 +40,6 @@ HTML should use double-quotes. It’s more public ([view source](https://css-tri
 ```html
 <img src="http://example.com/fish.png" alt="A fish" />
 ```
-
----
 
 ## Curly-Quotes
 
