@@ -1,6 +1,5 @@
 const fs = require('fs');
 const { DateTime } = require('luxon');
-const eleventyNavigationPlugin = require('@11ty/eleventy-navigation');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
@@ -53,7 +52,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.setDataDeepMerge(true);
 
     // Plugins
-    eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
 

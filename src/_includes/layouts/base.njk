@@ -22,12 +22,7 @@
 
 <body>
     <nav>
-        {{ collections.all | eleventyNavigation | eleventyNavigationToHtml({
-          listClass: "nav",
-          listItemClass: "nav-item",
-          activeListItemClass: "nav-item-active",
-          activeKey: eleventyNavigation.key
-        }) | safe }}
+        {% include 'components/main-nav.njk' %}
     </nav>
     <div class="wrapper">{{ content | safe }}</div>
 

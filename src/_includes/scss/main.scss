@@ -1,6 +1,6 @@
 // http://thesassway.com/beginner/how-to-structure-a-sass-project
-@import 'partials/all';
 @import 'modules/all';
+@import 'partials/all';
 
 body {
     background: $body-color;
