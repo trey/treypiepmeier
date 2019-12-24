@@ -9,6 +9,6 @@ bodyClass: home
     <img src="/img/trey.jpg" alt="A portrait of Trey" height="175" width="175" />
 </header>
 
-I’m a photographer and web developer. I live in Massachusetts. I’m originally from Tennessee. I’m into film photography, but digital cameras are cool too.
+I like to travel, build websites, and take pictures. I’m working on [an app for film photographers](http://cassettenest.com).
 
 {% include components/social %}
