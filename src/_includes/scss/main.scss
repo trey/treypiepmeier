@@ -1,29 +1,6 @@
-// http://thesassway.com/beginner/how-to-structure-a-sass-project
+@import 'vendor/all';
 @import 'modules/all';
-@import 'partials/all';
+@import 'base/all';
+@import 'components/all';
 
-body {
-    background: $body-color;
-    font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    padding: 1rem 2rem;
-}
-
-img {
-    height: auto;
-    max-width: 100%;
-}
-
-figure {
-    margin-left: 0;
-    margin-right: 0;
-
-    figcaption {
-        color: rgba(0, 0, 0, 0.6);
-        font-size: 0.8em;
-        font-style: italic;
-    }
-}
-
-footer { margin-top: 5rem; }
-
-.wrapper { max-width: 60ch; }
+// Have a nice day.
