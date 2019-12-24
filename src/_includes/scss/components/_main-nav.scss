@@ -1,20 +1,25 @@
 .nav {
     list-style: none;
     padding: 0;
+    margin: 0;
 
     &__item {
         &,
         a,
         span { display: inline-block; }
 
-        &--current { background: darken($body-color, 15%); }
+        &--current {
+            background: darken($body-color, 15%);
+
+            a { color: $text-color; }
+        }
 
         a,
         span { padding: 0.5rem; }
 
         a:hover {
             background: #333;
-            color: white;
+            color: $text-color;
         }
     }
 }

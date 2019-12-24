@@ -48,6 +48,9 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setLibrary('md', markdownLib);
 
+    // There’s gotta be a better way of handling this.
+    eleventyConfig.addPassthroughCopy('src/img/trey.jpg');
+
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);
 

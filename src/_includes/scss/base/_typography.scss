@@ -1,9 +1,24 @@
 body {
+    // Big text by default
+    font-size: 1.2rem;
     font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-shadow: -1px 1px 3px black;
+    color: $text-color;
+}
+
+a {
+    color: $link-color;
+
+    &:active {
+        position: relative;
+        top: 1px;
+    }
+
+    &:hover { color: $link-color-hover; }
 }
 
 blockquote {
-    border-left: 0.3rem solid rgba(0, 0, 0, 0.2);
+    border-left: 0.3rem solid rgba(255, 255, 255, 0.2);
     margin: 0;
     padding-left: 1rem;
 
@@ -17,4 +32,9 @@ blockquote {
 code {
     background: rgba(0, 0, 0, 0.1);
     padding: 0.1rem;
+}
+
+footer {
+    font-size: 0.7rem;
+    color: rgba(255, 255, 255, 0.5);
 }

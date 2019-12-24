@@ -7,12 +7,12 @@ tags: browser
 As a good and loyal Mac user, I know that the little button to close a tab (or window or modal dialog, etc.) should be on the left, not the right. Here’s how you can make Firefox a little less ugly.
 
 <figure>
-    <img src="https://trey-bucket.s3.us-east-1.amazonaws.com/.codepen-solutions-log/safari-tab.png" alt="Safari tab" />
+    <img src="https://trey-bucket.s3.us-east-1.amazonaws.com/.codepen-solutions-log/safari-tab.png" alt="Safari tab" width="295" />
     <figcaption>Safari. So pretty.</figcaption>
 </figure>
 
 <figure>
-    <img src="https://trey-bucket.s3.us-east-1.amazonaws.com/.codepen-solutions-log/ff-left-tab.png" alt="Firefox tab" />
+    <img src="https://trey-bucket.s3.us-east-1.amazonaws.com/.codepen-solutions-log/ff-left-tab.png" alt="Firefox tab" width="233" />
     <figcaption>Firefox. Now a little prettier.</figcaption>
 </figure>
 

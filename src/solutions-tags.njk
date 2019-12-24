@@ -17,6 +17,7 @@ section: solutions
 renderData:
   title: Solutions Log Tagged “{{ tag }}”
 permalink: /solutions/tag/{{ tag }}/
+bodyClass: posts
 ---
 <h1>{{ renderData.title }}</h1>
 
@@ -24,4 +25,4 @@ permalink: /solutions/tag/{{ tag }}/
 
 {% include 'components/posts-list.njk' %}
 
-<p><a href="/solutions/">All posts</a></p>
+<p class="all"><a href="/solutions/">All posts</a></p>

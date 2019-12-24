@@ -17,11 +17,13 @@ section: words
 renderData:
   title: Trey’s Thoughts Tagged “{{ tag }}”
 permalink: /words/tag/{{ tag }}/
+bodyClass: posts
 ---
+
 <h1>{{ renderData.title }}</h1>
 
 {% set postslist = collections[tag] %}
 
 {% include 'components/posts-list.njk' %}
 
-<p><a href="/words/">All posts</a></p>
+<p class="all"><a href="/words/">All posts</a></p>

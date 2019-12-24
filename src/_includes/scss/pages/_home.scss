@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: -1px 1px 10px black;
+}
+
+.wrapper { max-width: 55ch; }

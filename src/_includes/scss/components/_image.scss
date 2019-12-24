@@ -1,0 +1,15 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+figure {
+    margin-left: 0;
+    margin-right: 0;
+
+    figcaption {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.8em;
+        font-style: italic;
+    }
+}

@@ -1,8 +1,9 @@
-<ul class="postlist">
+<ul class="posts">
 {% for post in postslist | reverse %}
-    <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-        <div><a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></div>
-        <div>
+    <li class="post">
+        <div class="post__url"><a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a></div>
+        <div class="post__date" title="{{ post.date | fullDate }}">{{ post.date | shortDate }}</div>
+        <div class="post__tags">
             {% for tag in post.data.tags %}
                 {%- if tag != "words" and tag != "solutions" -%}
                     {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
@@ -10,7 +11,6 @@
                 {%- endif -%}
             {% endfor %}
         </div>
-        <div title="{{ post.date | fullDate }}">{{ post.date | shortDate }}</div>
     </li>
 {% endfor %}
 </ul>
