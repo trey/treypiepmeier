@@ -5,11 +5,12 @@
     padding: 0;
 
     li {
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+
         &,
         a { display: inline-block; }
     }
-
-    li + li { margin-left: 2rem; }
 
     svg { fill: $link-color; }
 
