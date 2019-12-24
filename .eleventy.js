@@ -66,6 +66,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('fullDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
     });
+    eleventyConfig.addFilter('midDate', dateObj => {
+        return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLLL dd, yyyy');
+    });
     eleventyConfig.addFilter('shortDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
