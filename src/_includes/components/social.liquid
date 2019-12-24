@@ -1,0 +1,5 @@
+<ul class="social">
+{%- for item in social -%}
+    <li><a href="{{ item.url }}">{%- include components/icon id: item.id title: item.name %}</a></li>
+{%- endfor -%}
+</ul>

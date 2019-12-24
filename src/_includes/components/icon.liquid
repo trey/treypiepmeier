@@ -1,0 +1,8 @@
+<svg role="img">
+{%- if title %}
+    <title>{{ title }} icon</title>
+{%- else %}
+    <title>{{ id }} icon</title>
+{%- endif %}
+    <use xlink:href="/img/vendor/{{ vendor | default: 'simpleicons' }}/sprite.svg#{{ id }}"></use>
+</svg>

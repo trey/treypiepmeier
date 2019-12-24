@@ -1,0 +1,17 @@
+[
+    {
+        "id": "twitter",
+        "name": "Twitter",
+        "url": "https://twitter.com/trey"
+    },
+    {
+        "id": "flickr",
+        "name": "Flickr",
+        "url": "https://www.flickr.com/photos/trey_piepmeier/"
+    },
+    {
+        "id": "codepen",
+        "name": "CodePen",
+        "url": "https://codepen.io/trey"
+    }
+]
