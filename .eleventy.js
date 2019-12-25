@@ -51,7 +51,7 @@ module.exports = function(eleventyConfig) {
     // There’s gotta be a better way of handling this.
     eleventyConfig.addPassthroughCopy('src/img/trey.jpg');
 
-    eleventyConfig.addPassthroughCopy('src/img/vendor/');
+    eleventyConfig.addPassthroughCopy('src/img/sprite.svg');
 
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);

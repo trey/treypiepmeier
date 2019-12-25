@@ -5,28 +5,13 @@
         "url": "https://twitter.com/trey"
     },
     {
-        "id": "mltshp",
-        "name": "MLTSHP",
-        "url": "https://mltshp.com/user/trey"
-    },
-    {
         "id": "flickr",
         "name": "Flickr",
         "url": "https://www.flickr.com/photos/trey_piepmeier/"
     },
     {
-        "id": "github",
-        "name": "GitHub",
-        "url": "https://github.com/trey"
-    },
-    {
-        "id": "codepen",
-        "name": "CodePen",
-        "url": "https://codepen.io/trey"
-    },
-    {
-        "id": "tumblr",
-        "name": "Tumblr",
-        "url": "https://trey.cc"
+        "id": "mltshp",
+        "name": "MLTSHP",
+        "url": "https://mltshp.com/user/trey"
     }
 ]

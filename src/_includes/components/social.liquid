@@ -1,13 +1,5 @@
 <ul class="social">
 {% for item in social -%}
-    <li>
-        <a href="{{ item.url }}">
-            {%- if item.id == 'mltshp' -%}
-                {%- include icons/mltshp.svg -%}
-            {%- else -%}
-                {%- include components/icon id: item.id title: item.name %}
-            {%- endif -%}
-        </a>
-    </li>
+    <li><a href="{{ item.url }}">{%- include components/icon id: item.id title: item.name %}</a></li>
 {% endfor -%}
 </ul>
