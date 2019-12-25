@@ -18,3 +18,4 @@ Here’s [my résumé](https://resume.treypiepmeier.com).
 - Code syntax highlighting styles from [Prism](https://prismjs.com) and [Dracula](https://draculatheme.com/).
 - Social network icons from [Simple Icons](https://simpleicons.org).
 - Still using [Normalize.css](http://necolas.github.io/normalize.css/) for some reason.
+- I used [PNG to JPG](https://png2jpg.com) on that little homepage image. I had probably taken a screenshot of the photo to begin with rather than export it like a responsible person.
