@@ -7,7 +7,7 @@ section: solutions
 
 <h1>{{ title }}</h1>
 
-<p><i>{{ page.date | fullDate }}</i></p>
+{% include 'components/post-date.njk' %}
 
 {% include 'components/tag-list.njk' %}
 

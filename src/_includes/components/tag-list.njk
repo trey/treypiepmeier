@@ -1,7 +1,9 @@
-<b>Tag{% if tags.length > 2 %}s{% endif %}:</b>
-{% for tag in tags %}
-    {%- if tag != section -%}
-        {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-    {%- endif -%}
-{% endfor %}
+<div class="tag-list">
+    Tag{% if tags.length > 2 %}s{% endif %}:
+    {% for tag in tags %}
+        {%- if tag != section -%}
+            {% set tagUrl %}/{{ section }}/tag/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+        {%- endif -%}
+    {% endfor %}
+</div>
