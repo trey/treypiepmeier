@@ -15,6 +15,7 @@ Here’s [my résumé](https://resume.treypiepmeier.com).
 ## [Colophon](https://en.wikipedia.org/wiki/Colophon_(publishing))
 
 - Built with [11ty](https://www.11ty.dev) and [Blank Slate v2](https://github.com/trey/blank2).
+- Hosted on [Netlify](https://netlify.com).
 - Code syntax highlighting styles from [Prism](https://prismjs.com) and [Dracula](https://draculatheme.com/).
 - Social network icons from [Simple Icons](https://simpleicons.org).
 - Still using [Normalize.css](http://necolas.github.io/normalize.css/) for some reason.
