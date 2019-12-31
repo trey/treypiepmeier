@@ -1,6 +1,6 @@
 <ul class="nav">
 {%- for item in nav -%}
-    {# We have to treat Home differently becauase every url contains `/`. #}
+    {# We have to treat Home differently because every url contains `/`. #}
     {%- if item.name == 'Home' %}
         {%- if item.url != page.url %}
     <li class="nav__item"><a href="{{ item.url }}">{{ item.name }}</a></li>
