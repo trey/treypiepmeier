@@ -10,8 +10,6 @@ I’m a photographer and web developer. I live in Massachusetts. I’m originall
 
 I’ve worked on some random projects over the years including a [Stephen King Checklist](https://sk.listsofbooks.com/) and [a podcast about Star Trek](https://jawgrind.com/). I'm currently building [an app for film photographers](http://cassettenest.com).
 
-Here’s [my résumé](https://resume.treypiepmeier.com).
-
 ## [Colophon](https://en.wikipedia.org/wiki/Colophon_(publishing))
 
 - Built with [11ty](https://www.11ty.dev) and [Blank Slate v2](https://github.com/trey/blank2).
