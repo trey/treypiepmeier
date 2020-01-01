@@ -45,7 +45,7 @@ Here’s the idea:[^2]
 
 Newest to oldest. Left to right. You read your typical blog (or social network) from newest to oldest. It only makes sense for that to be the direction of the navigation. Why do so many places get this backwards?
 
-I managed to figure out how to get this working based on [something Duncan Davidson had done](https://twitter.com/trey/status/1205301626661195777), but I’ve since seen what’s [probably a much cleaner way](https://twitter.com/BryceWrayTX/status/1208737887858167811). I haven’t tired that out yet, though. It’s not like the output will be any different and I’ve got it hidden away in an `include` anyway. 😃
+I managed to figure out how to get this working based on [something Duncan Davidson had done](https://twitter.com/trey/status/1205301626661195777), but I’ve since seen what’s [probably a much cleaner way](https://twitter.com/BryceWrayTX/status/1208737887858167811). I haven’t tried that out yet, though. It’s not like the output will be any different and I’ve got it hidden away in an `include` anyway. 😃
 
 ### Main Navigation
 
@@ -153,7 +153,7 @@ Which will output something like this:
 ```
 ## Syntax Highlighting
 
-[Syntax highlighting for code snippets is trivially simple with 11ty.](https://www.11ty.dev/docs/plugins/syntaxhighlight/) This one was quite a bonus that made the whole thing worth it for me all over again. For comparison, I never could figure out a good way to do this with WordPress. Here, you install the plugin, and pick [a theme](https://draculatheme.com), include the theme’s CSS file and you’re done. It’s worth noting that this is all handled without any client side JavaScript. All the beautiful syntax highlighting works even with JavaScript is disabled in your browser.
+[Syntax highlighting for code snippets is trivially simple with 11ty.](https://www.11ty.dev/docs/plugins/syntaxhighlight/) This one was quite a bonus that made the whole thing worth it for me all over again. For comparison, I never could figure out a good way to do this with WordPress. Here, you install the plugin, and pick [a theme](https://draculatheme.com), include the theme’s CSS file and you’re done. It’s worth noting that this is all handled without any client side JavaScript. All the beautiful syntax highlighting works even when JavaScript is disabled in your browser.
 
 ## [Netlify](https://www.netlify.com)
 
