@@ -260,7 +260,7 @@ How cool is that?! Come on.
 
 This leaves the individual `pages/` files free from any class name dependencies. This just makes me happy. [I’ve long been a proponent for this kind of setup.](https://codepen.io/trey/post/nesting-sass-includes), but this is the cleanest way I’ve found of implementing it.
 
-## Conclusion and the Future
+## Conclusion
 
 It feels good to finally have a place where I’m not embarrassed to share something I’ve written. A place where it’s obvious that this is a custom thing that at the very least doesn’t suck. It’s not a sloppy custom thing and it’s not a damned out of the box theme. 11ty has given me something that I feel that I can use to make exactly what I want the way I want without any compromise.
 
