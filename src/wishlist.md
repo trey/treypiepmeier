@@ -7,8 +7,8 @@ layout: layouts/base.njk
 
 {% comment %}
 - [B&H](https://www.bhphotovideo.com/find/wishlist.jsp#/863AEFE068/)
-{% endcomment %}
 - [Amazon](http://a.co/5le1mRp)
+{% endcomment %}
 - Donations
     - [The Planetary Society](https://planetary.org/donate)
     - [ACLU](https://www.aclu.org/)
