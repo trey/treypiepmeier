@@ -55,8 +55,6 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addPassthroughCopy('src/keybase.txt');
 
-    eleventyConfig.addPassthroughCopy('src/_redirects');
-
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);
 
