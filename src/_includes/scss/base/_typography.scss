@@ -44,4 +44,13 @@ footer {
 .footnotes {
     font-size: 0.8em;
     color: $text-color-subtle;
+
+    li:target {
+        color: $text-color;
+        outline: 0.2rem solid $gold;
+        padding: 0.5rem;
+
+        p:first-child { margin-top: 0; }
+        p:last-child { margin-bottom: 0; }
+    }
 }
