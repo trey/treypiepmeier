@@ -1,6 +1,8 @@
+{%- if link -%}<a href="{{ link }}">{%- endif -%}
 <img {% if imgTitle %}title="{{ imgTitle }}"{% endif %}{% if width %} width="{{ width }}"{% endif %} {% if height %}height="{{ height }}"{% endif %}
     src="/img/{{ section }}/{{ name }}-original.{{ ext | default: 'jpg' }}"
     alt="{{ alt | default: caption }}"
     srcset="/img/{{ section }}/{{ name }}-small.{{ ext | default: 'jpg' }} 800w,
             /img/{{ section }}/{{ name }}-medium.{{ ext | default: 'jpg' }} 1600w,
             /img/{{ section }}/{{ name }}-large.{{ ext | default: 'jpg' }} 2200w" />
+{%- if link -%}</a>{%- endif -%}
