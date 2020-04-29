@@ -14,7 +14,13 @@ a {
         top: 1px;
     }
 
-    &:hover { color: $link-color-hover; }
+    &:hover {
+        color: $body-color;
+        background: $link-color-hover;
+        text-shadow: none;
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
 blockquote {
