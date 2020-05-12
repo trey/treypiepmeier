@@ -10,13 +10,13 @@
   "author": "Trey Piepmeier",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.9.0",
+    "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^2.0.3",
-    "fast-glob": "^3.1.1",
-    "jimp": "^0.9.3",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
+    "fast-glob": "^3.2.2",
+    "jimp": "^0.10.3",
     "markdown-it-footnote": "^3.0.2",
-    "sass": "^1.22.12",
-    "stylelint-config-standard": "^19.0.0"
+    "sass": "^1.26.5",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
