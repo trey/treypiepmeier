@@ -26,6 +26,6 @@ One idea I had was to allow someone to choose the status on the same form they u
 
 What I ended up doing was to create an entirely separate form. You either add a roll to storage or you add it to your “Logbook.” There are some subtle differences, but this add-to-logbook form is basically the regular form you use when you edit an existing roll.
 
-{% include components/figure name: 'add-to-logbook' caption: 'The new form that allows for adding a roll of film directly to someone’s Logbook.' width: 400 %}
+{% include components/figure name: 'add-to-logbook.jpg' caption: 'The new form that allows for adding a roll of film directly to someone’s Logbook.' width: 400 %}
 
 It still has a long way to go, but this necessary diversion made the app a lot more useful and it wouldn’t have happened this soon without my early users!

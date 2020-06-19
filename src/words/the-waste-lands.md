@@ -4,7 +4,7 @@ date: 2017-03-29
 tags: review
 ---
 
-{% include components/img name: 'the-waste-lands' alt: 'The cover of the Stephen King book; The Waste Lands' %}
+{% include components/img name: 'the-waste-lands.jpg' alt: 'The cover of the Stephen King book; The Waste Lands' %}
 
 I always remember this book fondly because I was able to get a copy of 1st edition hardback from my local comic shop when it first came out. It was the first of the Dark Tower novels that came out after I had gotten into the series.
 

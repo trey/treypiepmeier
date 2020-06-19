@@ -6,7 +6,7 @@ tags: project
 
 For as long as I can remember, I've wanted to be able to catalog my comic books. When I was nine years old, that meant keeping a notebook with a line for each possible issue of a series. The idea started as a way to give me piece of mind in case I needed to file an insurance claim should I lose my collection in a fire.
 
-[{% include components/img alt: 'ComicBinder Circa 1986' imgTitle: 'ComicBinder Circa 1986' name: 'comicbinder-notebook' %}](https://www.flickr.com/photos/trey_piepmeier/14537046953/)
+[{% include components/img alt: 'ComicBinder Circa 1986' imgTitle: 'ComicBinder Circa 1986' name: 'comicbinder-notebook.jpg' %}](https://www.flickr.com/photos/trey_piepmeier/14537046953/)
 
 This is the kind of thing that kept me up as child around thirty years ago.
 

@@ -10,23 +10,23 @@ One of the things I want to track in Cassette Nest is very basic information abo
 
 Currently, I record this information using [PhotoMemo books](https://shootfilmco.com/products/photomemo-photographers-memo-book-2-pack).
 
-{% include components/figure name: 'journaling-1' caption: '~2017-now: PhotoMemo' alt: 'A PhotoMemo book with lots of notes in it.' %}
+{% include components/figure name: 'journaling-1.jpg' caption: '~2017-now: PhotoMemo' alt: 'A PhotoMemo book with lots of notes in it.' %}
 
 Before I discovered those, I used a variety of different notebooks:
 
-{% include components/figure name: 'journaling-2' caption: '2016: <a href="https://fieldnotesbrand.com/">Field Notes</a>' alt: 'A Field Notes book with film notes in it.' %}
+{% include components/figure name: 'journaling-2.jpg' caption: '2016: <a href="https://fieldnotesbrand.com/">Field Notes</a>' alt: 'A Field Notes book with film notes in it.' %}
 
-{% include components/figure name: 'journaling-3' caption: '~2015: <a href="https://analogbook.com/">Analogbook</a>' alt: 'An Analogbook with lots of notes and wasted space.' %}
+{% include components/figure name: 'journaling-3.jpg' caption: '~2015: <a href="https://analogbook.com/">Analogbook</a>' alt: 'An Analogbook with lots of notes and wasted space.' %}
 
 After a roll is finished…
 
 I adjust the “Capture Time” in Lightroom.
 
-{% include components/figure name: 'journaling-4-always11am' ext: 'png' caption: 'Always 11:00 AM' alt: 'The Edit Capture Time dialog in Lightroom Classic' %}
+{% include components/figure name: 'journaling-4-always11am.png' caption: 'Always 11:00 AM' alt: 'The Edit Capture Time dialog in Lightroom Classic' %}
 
 I print out a copy of each two-page spread of the notebook and keep it in a sheet protector with my negatives.
 
-{% include components/figure name: 'photo-memo-copies-and-index' caption: 'Copied PhotoMemo pages with my 2018 annual index.' alt: 'PhotoMemo pages and annual index in sheet protectors ready to be loaded into a film binder.' %}
+{% include components/figure name: 'photo-memo-copies-and-index.jpg' caption: 'Copied PhotoMemo pages with my 2018 annual index.' alt: 'PhotoMemo pages and annual index in sheet protectors ready to be loaded into a film binder.' %}
 
 The journaling feature will take the place of recording things in a notebook, but I probably won’t give them up. Having an immediate hard-copy of that information is good piece of mind.
 

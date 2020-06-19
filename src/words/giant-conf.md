@@ -4,7 +4,7 @@ date: 2014-07-13
 tags: review
 ---
 
-{% include components/img name: 'piepmeier-and-beaird' alt: 'Piepmeier and Beaird about to duke it out.' imgTitle: 'Fisticuffs' %}
+{% include components/img name: 'piepmeier-and-beaird.jpg' alt: 'Piepmeier and Beaird about to duke it out.' imgTitle: 'Fisticuffs' %}
 
 Last month, I attended [the first annual GIANT Conf][giant] in Charleston, SC. I wasn't sure what to expect, and had mixed feelings about making the trip back so shortly after leaving[^1]. For better or worse, here's what I thought of it.
 

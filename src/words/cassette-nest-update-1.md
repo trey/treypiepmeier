@@ -14,9 +14,9 @@ If you’re interested in such things, keep reading!
 
 Over the last few years, I’ve come up with a system of tracking how I use my film. This has entailed a few different pieces of software (a fairly fiddly spreadsheet as well as Trello) and a physical notebook (the incomparable [PhotoMemo](https://shootfilmco.com/products/photomemo-photographers-memo-book-2-pack) by [Mike Padua](https://twitter.com/mikepadua)). I’m attempting to build a system to allow me to track of all this information a little more easily.
 
-{% include components/figure name: 'photo-memo-index' caption: 'The index page of my latest PhotoMemo book' %}
+{% include components/figure name: 'photo-memo-index.jpg' caption: 'The index page of my latest PhotoMemo book' %}
 
-{% include components/figure name: 'photo-memo-copies-and-index' caption: 'Printouts of a spreadsheet and notebook pages' alt: 'PhotoMemo pages and annual index in sheet protectors ready to be loaded into a film binder.' %}
+{% include components/figure name: 'photo-memo-copies-and-index.jpg' caption: 'Printouts of a spreadsheet and notebook pages' alt: 'PhotoMemo pages and annual index in sheet protectors ready to be loaded into a film binder.' %}
 
 ## The System
 
@@ -52,9 +52,9 @@ The data in Cassette Nest is both personal and archival. I want the data you cre
 
 After building out most of the basic functionality, I decided to step back and look at the user interface from a new perspective. I’ve started using [Glitch](https://glitch.com/) to build out individual mobile page views. I’ve posted a couple of screenshots from this process [on Dribbble](https://dribbble.com/trey/tags/cassettenest).
 
-{% include components/figure name: 'cassette-nest-actual-ui' ext: 'png' alt: 'A very plain interface of text on a white background.' caption: 'How the actual app looks now' %}
+{% include components/figure name: 'cassette-nest-actual-ui.png' alt: 'A very plain interface of text on a white background.' caption: 'How the actual app looks now' %}
 
-{% include components/figure name: 'cassette-nest-prototype' ext: 'png' alt: 'The design prototype of a mobile-optimized homepage/dashboard' caption: 'A prototype of a possible homepage/dashboard' %}
+{% include components/figure name: 'cassette-nest-prototype.png' alt: 'The design prototype of a mobile-optimized homepage/dashboard' caption: 'A prototype of a possible homepage/dashboard' %}
 
 ## Now
 

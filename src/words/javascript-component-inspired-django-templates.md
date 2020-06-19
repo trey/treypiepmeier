@@ -74,11 +74,11 @@ Note my use of [OOCSS][oocss]-ish / [BEM][bem]-style classes. That makes writing
 
 Here are some of the ways cards can look:
 
-{% include components/figure name: 'card-film-inventory' ext: 'png' caption: 'Inventory Item showing name, number of rolls, and type of film (background color indicating color negative film)' width: 374 height: 54 %}
+{% include components/figure name: 'card-film-inventory.png' caption: 'Inventory Item showing name, number of rolls, and type of film (background color indicating color negative film)' width: 374 height: 54 %}
 
-{% include components/figure name: 'card-project' ext: 'png' caption: 'Project showing number of rolls of film' width: 374 height: 48 %}
+{% include components/figure name: 'card-project.png' caption: 'Project showing number of rolls of film' width: 374 height: 48 %}
 
-{% include components/figure name: 'card-loaded-camera' ext: 'png' caption: 'Loaded Camera with a “reminder” tab showing film type (background color indicating black and white) and ISO' width: 373 height: 101 %}
+{% include components/figure name: 'card-loaded-camera.png' caption: 'Loaded Camera with a “reminder” tab showing film type (background color indicating black and white) and ISO' width: 373 height: 101 %}
 
 I’ve since expanded the concept to certain form fields, which hasn’t been quite as easy of a drop-in solution so far, but it’s a lot easier than duplicating a lot of HTML where it _does_ work.
 
