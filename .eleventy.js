@@ -15,6 +15,7 @@ module.exports = function(eleventyConfig) {
     let imgOptions = {
         inputDir: 'src/img',
         outputDir: 'dist/img',
+        widths: [800, 1600, 2200],
     };
     eleventyConfig.addShortcode('myResponsiveImage', async function (src, alt, options=imgOptions) {
         if (alt === undefined) {
@@ -24,18 +25,18 @@ module.exports = function(eleventyConfig) {
 
         let stats = await Image(`${imgOptions.inputDir}/${src}`, options);
         let lowestSrc = stats.jpeg[0];
-        let sizes = ['800w', '1600w', '2200w']; // Make sure you customize this!
+        let sizes = ['800w', '1600w', '2200w'];
 
         // Iterate over formats and widths
         return `<picture>
             ${Object.values(stats).map(imageFormat => {
-                return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(", ")}" sizes="${sizes}">`;
+                return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(', ')}" sizes="${sizes}" />`;
             }).join('\n')}
                 <img
-                alt="${alt}"
-                src="${lowestSrc.url}"
-                width="${lowestSrc.width}"
-                height="${lowestSrc.height}">
+                    alt="${alt}"
+                    src="${lowestSrc.url}"
+                    width="${lowestSrc.width}"
+                    height="${lowestSrc.height}" />
             </picture>`;
     });
 
