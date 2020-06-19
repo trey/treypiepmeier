@@ -2,8 +2,7 @@ const fs = require('fs');
 const { DateTime } = require('luxon');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
-
-const Image = require("@11ty/eleventy-img");
+const responsiveImage = require('./src/_includes/shortcodes/responsive-image');
 
 module.exports = function(eleventyConfig) {
     let markdownIt = require('markdown-it');
@@ -11,30 +10,7 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.setLibrary('md', markdownLib);
 
-    // Responsive images
-    let imgOptions = {
-        inputDir: 'src/img',
-        outputDir: 'dist/img',
-        widths: [800, 1600, 2200],
-        formats: 'jpeg',
-    };
-    eleventyConfig.addShortcode('myResponsiveImage', async function (src, alt, options=imgOptions) {
-        if (alt === undefined) {
-            // You bet we throw an error on missing alt (alt="" works okay)
-            throw new Error(`Missing \`alt\` on myResponsiveImage from: ${src}`);
-        }
-
-        let stats = await Image(`${imgOptions.inputDir}/${src}`, options);
-        let lowestSrc = stats.jpeg[0];
-
-        // Iterate over formats (just jpeg) and widths
-        return Object.values(stats).map(imageFormat => {
-            return `<img
-                        alt="${alt}"
-                        src="${lowestSrc.url}"
-                        srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`)}" />`;
-        });
-    });
+    eleventyConfig.addShortcode('responsiveImage', responsiveImage);
 
     // There’s gotta be a better way of handling this.
     eleventyConfig.addPassthroughCopy('src/img/trey.jpg');
