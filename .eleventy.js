@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
         inputDir: 'src/img',
         outputDir: 'dist/img',
         widths: [800, 1600, 2200],
+        formats: 'jpeg',
     };
     eleventyConfig.addShortcode('myResponsiveImage', async function (src, alt, options=imgOptions) {
         if (alt === undefined) {
@@ -25,19 +26,14 @@ module.exports = function(eleventyConfig) {
 
         let stats = await Image(`${imgOptions.inputDir}/${src}`, options);
         let lowestSrc = stats.jpeg[0];
-        let sizes = ['800w', '1600w', '2200w'];
 
-        // Iterate over formats and widths
-        return `<picture>
-            ${Object.values(stats).map(imageFormat => {
-                return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(', ')}" sizes="${sizes}" />`;
-            }).join('\n')}
-                <img
-                    alt="${alt}"
-                    src="${lowestSrc.url}"
-                    width="${lowestSrc.width}"
-                    height="${lowestSrc.height}" />
-            </picture>`;
+        // Iterate over formats (just jpeg) and widths
+        return Object.values(stats).map(imageFormat => {
+            return `<img
+                        alt="${alt}"
+                        src="${lowestSrc.url}"
+                        srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`)}" />`;
+        });
     });
 
     // There’s gotta be a better way of handling this.
