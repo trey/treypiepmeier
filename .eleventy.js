@@ -3,50 +3,41 @@ const { DateTime } = require('luxon');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 
-const Jimp = require('jimp');
-const fg = require('fast-glob');
-const wordsImagesPath = 'img/words';
-const wordsImages = fg.sync([`src/${wordsImagesPath}/*`], { objectMode: true });
-
-// Generate different sized image files.
-for (let image of wordsImages) {
-    const regex = /\.[^/.]+$/;
-    const fileName = image.name.replace(regex, '');
-    const fileExtension = image.name.match(regex).pop();
-    const fileVersion = size => `${wordsImagesPath}/${fileName}-${size}${fileExtension}`;
-
-    if (!fs.existsSync(`dist/${fileVersion('large')}`)) {
-        Jimp.read(image.path, (err, img) => {
-            if (err) throw err;
-            img.resize(2200, Jimp.AUTO).quality(60).write(`dist/${fileVersion('large')}`);
-        });
-    }
-    if (!fs.existsSync(`dist/${fileVersion('medium')}`)) {
-        Jimp.read(image.path, (err, img) => {
-            if (err) throw err;
-            img.resize(1600, Jimp.AUTO).quality(60).write(`dist/${fileVersion('medium')}`);
-        });
-    }
-    if (!fs.existsSync(`dist/${fileVersion('small')}`)) {
-        Jimp.read(image.path, (err, img) => {
-            if (err) throw err;
-            img.resize(800, Jimp.AUTO).quality(60).write(`dist/${fileVersion('small')}`);
-        });
-    }
-    if (!fs.existsSync(`dist/${fileVersion('original')}`)) {
-        // Optimize original image
-        Jimp.read(image.path, (err, img) => {
-            if (err) throw err;
-            img.quality(60).write(`dist/${fileVersion('original')}`);
-        });
-    }
-}
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function(eleventyConfig) {
     let markdownIt = require('markdown-it');
     let markdownLib = markdownIt({ html: true }).use(require('markdown-it-footnote'));
 
     eleventyConfig.setLibrary('md', markdownLib);
+
+    // Responsive images
+    let imgOptions = {
+        inputDir: 'src/img',
+        outputDir: 'dist/img',
+    };
+    eleventyConfig.addShortcode('myResponsiveImage', async function (src, alt, options=imgOptions) {
+        if (alt === undefined) {
+            // You bet we throw an error on missing alt (alt="" works okay)
+            throw new Error(`Missing \`alt\` on myResponsiveImage from: ${src}`);
+        }
+
+        let stats = await Image(`${imgOptions.inputDir}/${src}`, options);
+        let lowestSrc = stats.jpeg[0];
+        let sizes = ['800w', '1600w', '2200w']; // Make sure you customize this!
+
+        // Iterate over formats and widths
+        return `<picture>
+            ${Object.values(stats).map(imageFormat => {
+                return `  <source type="image/${imageFormat[0].format}" srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`).join(", ")}" sizes="${sizes}">`;
+            }).join('\n')}
+                <img
+                alt="${alt}"
+                src="${lowestSrc.url}"
+                width="${lowestSrc.width}"
+                height="${lowestSrc.height}">
+            </picture>`;
+    });
 
     // There’s gotta be a better way of handling this.
     eleventyConfig.addPassthroughCopy('src/img/trey.jpg');
