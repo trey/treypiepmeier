@@ -8,7 +8,7 @@ module.exports = async (src, alt, title, width, height) => {
         inputDir: 'src/img',
         outputDir: 'dist/img/words',
         urlPath: '/img/words',
-        widths: [800, 1600, 2200],
+        widths: [800, 1600, 2200, null],
         formats: 'jpeg',
     };
 
@@ -21,15 +21,13 @@ module.exports = async (src, alt, title, width, height) => {
     let definedWidth = (width) ? width : props.width;
     let definedHeight = (height) ? height : props.height;
 
-    // Iterate over formats (just jpeg for now) and widths.
-    return Object.values(stats).map(imageFormat => {
-        const imgTag = `<img ${titleAttribute}
-                            alt="${alt}"
-                            src="${lowestSrc.url}"
-                            width="${definedWidth}"
-                            height="${definedHeight}"
-                            srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`)}" />`;
-        // Remove extraneous spaces and newlines.
-        return imgTag.replace(/\n/g, '').replace(/\s+/g, ' ');
-    });
+    const imgTag = `<img ${titleAttribute}
+                        alt="${alt}"
+                        src="${lowestSrc.url}"
+                        width="${definedWidth}"
+                        height="${definedHeight}"
+                        srcset="${stats.jpeg.map(entry => `${entry.url} ${entry.width}w`)}" />`;
+
+    // Remove extraneous spaces and newlines.
+    return imgTag.replace(/\n/g, '').replace(/\s+/g, ' ');
 };
