@@ -23,11 +23,13 @@ module.exports = async (src, alt, title, width, height) => {
 
     // Iterate over formats (just jpeg for now) and widths.
     return Object.values(stats).map(imageFormat => {
-        return `<img
-                    alt="${alt}" ${titleAttribute}
-                    src="${lowestSrc.url}"
-                    width="${definedWidth}"
-                    height="${definedHeight}"
-                    srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`)}" />`;
+        const imgTag = `<img ${titleAttribute}
+                            alt="${alt}"
+                            src="${lowestSrc.url}"
+                            width="${definedWidth}"
+                            height="${definedHeight}"
+                            srcset="${imageFormat.map(entry => `${entry.url} ${entry.width}w`)}" />`;
+        // Remove extraneous spaces and newlines.
+        return imgTag.replace(/\n/g, '').replace(/\s+/g, ' ');
     });
 };
