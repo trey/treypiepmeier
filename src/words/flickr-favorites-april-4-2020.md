@@ -30,7 +30,7 @@ This one is a classic in our household, but I somehow hadn’t officlally added 
     link: 'https://www.flickr.com/photos/val202/27717454510/'
 %}
 
-This is the way you took a screenshot in 1996 apparently.
+This is the way you took a screenshot in 1986 apparently.
 
 ([via](https://twitter.com/mwichary/status/1241226169975861248))
 
