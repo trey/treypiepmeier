@@ -14,7 +14,7 @@
     "@11ty/eleventy-img": "^0.2.5",
     "@11ty/eleventy-plugin-rss": "^1.0.7",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
-    "eslint": "^7.2.0",
+    "eslint": "^7.3.0",
     "markdown-it-footnote": "^3.0.2",
     "sass": "^1.26.8",
     "stylelint-config-standard": "^20.0.0"

@@ -14,7 +14,7 @@ A combination of several different sites now all together and built using [11ty]
 
 1. `nvm use`
 2. `npm i`
-3. `eleventy --serve`
+3. `npx @11ty/eleventy --serve`
 4. See it running at http://localhost:8080
 
 ## To make changes and publish:
