@@ -1,4 +1,5 @@
 <div class="tag-list">
+{% if tags.length > 1 %}
     Tag{% if tags.length > 2 %}s{% endif %}:
     {% for tag in tags %}
         {%- if tag != section -%}
@@ -6,4 +7,5 @@
             <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
         {%- endif -%}
     {% endfor %}
+{% endif %}
 </div>
