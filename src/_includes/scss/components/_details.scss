@@ -1,0 +1,16 @@
+details {
+    padding: 1rem;
+    margin: 2rem -1rem;
+
+    &[open] {
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 0.3em;
+    }
+}
+
+summary {
+    color: $link-color;
+    cursor: pointer;
+
+    &:hover { color: $link-color-hover; }
+}
