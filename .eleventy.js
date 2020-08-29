@@ -6,7 +6,7 @@ const responsiveImage = require('./src/_includes/shortcodes/responsive-image');
 
 module.exports = function(eleventyConfig) {
     let markdownIt = require('markdown-it');
-    let markdownLib = markdownIt({ html: true })
+    let markdownLib = markdownIt({ html: true, typographer: true })
         .use(require('markdown-it-footnote'))
         .use(require('markdown-it-collapsible'));
 
