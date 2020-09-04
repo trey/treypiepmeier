@@ -8,5 +8,10 @@
         "id": "flickr",
         "name": "Flickr",
         "url": "https://www.flickr.com/photos/trey_piepmeier/"
+    },
+    {
+        "id": "github",
+        "name": "GitHub",
+        "url": "https://github.com/trey"
     }
 ]
