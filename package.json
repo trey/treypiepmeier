@@ -8,7 +8,8 @@
   },
   "keywords": [],
   "author": "Trey Piepmeier",
-  "license": "SEE LICENSE IN `LICENSE`",
+  "license": "UNLICENSED",
+  "private": true,
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "@11ty/eleventy-img": "^0.3.0",
