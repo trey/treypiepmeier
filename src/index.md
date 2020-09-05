@@ -11,4 +11,6 @@ bodyClass: home
 
 I like to travel, build websites, and take pictures. I’m working on [an app for film photographers](http://cassettenest.com).
 
+🇺🇸 You should [register to vote](https://vote.gov).
+
 {% include components/social %}
