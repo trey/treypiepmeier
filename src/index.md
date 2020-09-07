@@ -5,7 +5,7 @@ bodyClass: home
 ---
 
 <header>
-    <h1>Hi, I’m Trey.</h1>
+    <h1>I’m Trey Piepmeier and this is my homepage.</h1>
     <img src="/img/trey.jpg" alt="A portrait of Trey" height="175" width="175" />
 </header>
 

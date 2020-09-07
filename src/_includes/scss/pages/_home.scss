@@ -3,11 +3,19 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 4rem;
-}
+    flex-wrap: wrap-reverse;
 
-header img {
-    border-radius: 50%;
-    box-shadow: -1px 1px 10px black;
+    img {
+        border-radius: 50%;
+        box-shadow: -1px 1px 10px black;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width: 750px) {
+        h1 { flex-basis: 66%; }
+
+        img { margin: 0; }
+    }
 }
 
 .wrapper {

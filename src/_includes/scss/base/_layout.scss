@@ -3,7 +3,11 @@ body {
     padding: 0.5rem 1rem;
 }
 
-footer { margin-top: 5rem; }
+footer {
+    margin-top: 5rem;
+
+    p { max-width: 100%; }
+}
 
 .wrapper {
     max-width: 68ch;
