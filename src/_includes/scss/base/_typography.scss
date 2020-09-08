@@ -14,7 +14,10 @@ a {
         top: 1px;
     }
 
-    &:hover {
+    &:visited { color: $text-color; }
+
+    &:hover,
+    &:focus {
         color: $body-color;
         background: $link-color-hover;
         text-shadow: none;
