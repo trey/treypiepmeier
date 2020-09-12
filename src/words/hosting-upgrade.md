@@ -14,7 +14,7 @@ That meant I had to learn how to host Docker-powered sites. I've been away from 
 
 - It's a very well designed and easy to use service.
 - It comes highly recommended from my peers.
-- It’s not [owned by SalesForce](https://en.wikipedia.org/wiki/Heroku#History).
+- It’s not [owned by Salesforce](https://en.wikipedia.org/wiki/Heroku#History).
 - It doesn’t use [Amazon](https://www.youtube.com/watch?v=II_0DbuxEEg "Anand Giridharadas on Jeff Bezos") infrastructure behind the scenes[^amazon]!
 
 [^amazon]: This is a big one. I can't understand why more folks aren't talking about avoiding technology that is helping to destroy the world. Most of the internet runs on Amazon's servers. Front-end developers seem to only talk about (Facebook-created) React. This is not ok. I'm trying really hard to avoid all that mess but I feel like the rest of the world is ~~gaslighting me~~ not paying attention.
