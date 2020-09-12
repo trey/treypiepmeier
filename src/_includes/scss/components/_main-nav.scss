@@ -8,6 +8,8 @@
         a,
         span { display: inline-block; }
 
+        a { color: $link-color; }
+
         &--current {
             background: darken($body-color, 15%);
 
@@ -16,8 +18,6 @@
 
         a,
         span { padding: 0.5rem; }
-
-        a:visited { color: $link-color; }
 
         a:hover,
         a:focus {
