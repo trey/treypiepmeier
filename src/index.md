@@ -9,7 +9,7 @@ bodyClass: home
     <img src="/img/trey.jpg" alt="A portrait of Trey" height="175" width="175" />
 </header>
 
-I like to travel, build websites, and take pictures. I’m working on [an app for film photographers](http://cassettenest.com).
+I like to travel, build websites, and take pictures. I’m working on [an app for film photographers](https://cassettenest.com).
 
 I’m available [for hire](https://hire.treypiepmeier.com).
 
