@@ -10,13 +10,14 @@ module.exports = function(eleventyConfig) {
         .use(require('markdown-it-footnote'))
         .use(require('markdown-it-collapsible'));
 
+    eleventyConfig.addWatchTarget('src/scss');
+
     eleventyConfig.setLibrary('md', markdownLib);
 
     eleventyConfig.addShortcode('responsiveImage', responsiveImage);
 
     // There’s gotta be a better way of handling this.
     eleventyConfig.addPassthroughCopy('src/img/trey.jpg');
-
     eleventyConfig.addPassthroughCopy('src/img/sprite.svg');
 
     // Allow directory json files to add tags to files.
