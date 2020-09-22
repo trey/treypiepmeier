@@ -1,27 +1,27 @@
-{% set currentItemIndex = 0 %}
+{%- set currentItemIndex = 0 -%}
 
-{% for item in collection %}
-    {% if item.url == page.url %}
-        {% set currentItemIndex = loop.index0 %}
-    {% endif %}
-{% endfor %}
+{%- for item in collection -%}
+    {%- if item.url == page.url -%}
+        {%- set currentItemIndex = loop.index0 -%}
+    {%- endif -%}
+{%- endfor -%}
 
-{% set prevItemIndex = currentItemIndex - 1 %}
-{% set nextItemIndex = currentItemIndex + 1 %}
+{%- set prevItemIndex = currentItemIndex - 1 -%}
+{%- set nextItemIndex = currentItemIndex + 1 -%}
 
-{% if prevItemIndex or nextItemIndex %}
+{%- if prevItemIndex or nextItemIndex -%}
 <ul class="post-nav">
     <li class="next">
     {% if nextItemIndex < collection.length %}
-        {% set next = collection[nextItemIndex] %}
+        {%- set next = collection[nextItemIndex] -%}
         <a href="{{ next.url }}">&larr;&nbsp;{{ next.data.title }}</a>
-    {% endif %}
+    {%- endif %}
     </li>
     <li class="prev">
     {% if prevItemIndex >= 0 %}
-        {% set prev = collection[prevItemIndex] %}
+        {%- set prev = collection[prevItemIndex] -%}
         <a href="{{ prev.url }}">{{ prev.data.title }}&nbsp;&rarr;</a>
-    {% endif %}
+    {%- endif %}
     </li>
 </ul>
-{% endif %}
+{%- endif -%}
