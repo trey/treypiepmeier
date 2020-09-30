@@ -10,7 +10,7 @@ I’m building a web application to track your film inventory before and after i
 
 If you’re interested in such things, keep reading!
 
-## [Purpose](http://cassettenest.com/purpose)
+## [Why?](https://cassettenest.com/why/)
 
 Over the last few years, I’ve come up with a system of tracking how I use my film. This has entailed a few different pieces of software (a fairly fiddly spreadsheet as well as Trello) and a physical notebook (the incomparable [PhotoMemo](https://shootfilmco.com/products/photomemo-photographers-memo-book-2-pack) by [Mike Padua](https://twitter.com/mikepadua)). I’m attempting to build a system to allow me to track of all this information a little more easily.
 
