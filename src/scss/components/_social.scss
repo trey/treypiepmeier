@@ -14,7 +14,8 @@
 
     svg { fill: $link-color; }
 
-    a:hover {
+    a:hover,
+    a:focus {
         background: none;
 
         svg { fill: $gold; }
