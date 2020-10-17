@@ -6,7 +6,7 @@ layout: layouts/base.njk
 # {{ title }}
 
 - [B&H](https://www.bhphotovideo.com/find/wishlist.jsp#/863AEFE068/)
-- [Bookshop](https://bookshop.org/wishlists/b08a78238ff76845722fbf65beee92b03837a2f3) (view on a desktop computer)
+- [Bookshop](https://bookshop.org/wishlists/b08a78238ff76845722fbf65beee92b03837a2f3)
 - [Amazon](http://a.co/5le1mRp)
 - Donations
     - [The Planetary Society](https://planetary.org/donate)
