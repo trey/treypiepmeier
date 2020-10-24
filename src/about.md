@@ -8,7 +8,7 @@ description: What is it with Trey Piepmeier?
 
 I’m a photographer and web developer. I live in Massachusetts. I’m originally from Tennessee. I’m into film photography, but digital cameras are cool too.
 
-I’ve worked on some random projects over the years including a [Stephen King Checklist](https://sk.listsofbooks.com/) and [a podcast about Star Trek](https://jawgrind.com/). I'm currently building [an app for film photographers](http://cassettenest.com).
+I’ve worked on some random projects over the years including a [Stephen King Checklist](https://sk.listsofbooks.com/) and [a podcast about Star Trek](https://jawgrind.com/). I'm currently building [an app for film photographers](https://cassettenest.com).
 
 +++ Colophon
 - I wrote in detail about [how I built this website](/words/2019/12/revamp-2019/).

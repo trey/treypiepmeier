@@ -135,7 +135,7 @@ This is a nice, clean, semantic, easy-to-style way to put a caption on an image.
 
 ### SVG Icons
 
-I was able to repurpose some code I have in [Cassette Nest](http://cassettenest.com) (written in Django, whose template language is delightfully similar to the two templating languages I’m using [[Nunjucks](https://mozilla.github.io/nunjucks/) and Liquid]) and a simple, hand-made SVG sprite to get something like this to render an icon:
+I was able to repurpose some code I have in [Cassette Nest](https://cassettenest.com) (written in Django, whose template language is delightfully similar to the two templating languages I’m using [[Nunjucks](https://mozilla.github.io/nunjucks/) and Liquid]) and a simple, hand-made SVG sprite to get something like this to render an icon:
 
 {% raw %}
 ```django
