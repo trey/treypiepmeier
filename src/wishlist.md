@@ -5,6 +5,7 @@ layout: layouts/base.njk
 
 # {{ title }}
 
+- [12-pack Tennessee Red Cedar Pencils](https://musgravepencil.com/products/tennessee-red-cedar-pencil)
 - [B&H](https://www.bhphotovideo.com/find/wishlist.jsp#/863AEFE068/)
 - [Bookshop](https://bookshop.org/wishlists/b08a78238ff76845722fbf65beee92b03837a2f3)
 - [Amazon](http://a.co/5le1mRp)
