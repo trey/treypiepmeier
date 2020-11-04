@@ -13,6 +13,4 @@ I like to travel, build websites, and take pictures. I’m working on [an app fo
 
 I’m available [for hire](https://hire.treypiepmeier.com).
 
-🇺🇸 You should [vote](https://vote.gov) for [Biden / Harris](https://joebiden.com).
-
 {% include components/social %}
