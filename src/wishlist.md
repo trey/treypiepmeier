@@ -22,7 +22,7 @@ layout: layouts/base.njk
     - [NAACP](http://www.naacp.org/)
     - [Hispanic Federation](https://hispanicfederation.org/unidos)
     - [Wikimedia Foundation](https://donate.wikimedia.org/)
-- College apparel (sweatshirts, t-shirts)
+- College apparel (sweatshirts, T-shirts)
     - TTU
     - CofC
     - UNC
@@ -31,7 +31,7 @@ layout: layouts/base.njk
 ## Sizes
 
 - Shirt
-    - Large (t-shirts)
+    - Large (T-shirts)
     - Medium (sweaters, probably)
     - 45” chest
     - 24.75” sleeve
