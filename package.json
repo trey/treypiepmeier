@@ -21,6 +21,7 @@
     "@11ty/eleventy-img": "^0.3.0",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.2",
+    "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eslint": "^7.10.0",
     "luxon": "^1.25.0",
     "markdown-it-collapsible": "^1.0.0",

@@ -5,7 +5,7 @@ description: This is Trey Piepmeier’s blog. He writes about photography and we
 section: words
 ---
 
-<h1>{{ title }}</h1>
+<h1>{{ title | widont | safe }}</h1>
 
 {% include 'components/post-date.njk' %}
 

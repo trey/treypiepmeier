@@ -3,6 +3,7 @@ const { DateTime } = require('luxon');
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight');
 const pluginRss = require('@11ty/eleventy-plugin-rss');
 const responsiveImage = require('./src/_includes/shortcodes/responsive-image');
+const typographyPlugin = require('@jamshop/eleventy-plugin-typography');
 
 module.exports = function(eleventyConfig) {
     let markdownIt = require('markdown-it');
@@ -27,6 +28,7 @@ module.exports = function(eleventyConfig) {
     // Plugins
     eleventyConfig.addPlugin(syntaxHighlight);
     eleventyConfig.addPlugin(pluginRss);
+    eleventyConfig.addPlugin(typographyPlugin);
 
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 
