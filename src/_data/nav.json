@@ -8,6 +8,10 @@
         "url": "/words/"
     },
     {
+        "name": "Blogroll",
+        "url": "/blogroll/"
+    },
+    {
         "name": "About",
         "url": "/about/"
     }
