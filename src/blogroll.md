@@ -25,6 +25,7 @@ layout: layouts/base.njk
 - [Scott McCloud](http://scottmccloud.com)
 - [ShaunInman.com](https://shauninman.com/archive/)
 - [super-structure - All the makings of a real web site, plus my stuff.](https://www.jasoncoleman.net)
+- [Teju Cole: On Photography - The New York Times](https://www.nytimes.com/column/on-photography)
 - [The Film Photography Project](https://filmphotographyproject.com/content/news/)
 - [tyler.io](https://tyler.io)
 - [xkcd](https://xkcd.com)
