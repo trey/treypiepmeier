@@ -5,29 +5,30 @@ layout: layouts/base.njk
 
 # {{ title }}
 
+Good websites. I recommend subscribing using [Feedbin](https://feedbin.com).
+
 ## Words and Pictures
 
-- [A Working Library](https://aworkinglibrary.com)
+- [Andre Torrez](http://torrez.org/)
 - [Ash Furrow](https://ashfurrow.com/blog)
-- [bigheadtaco.com](http://www.bigheadtaco.com)
-- [Chris Glass Photoblog](https://chrisglass.com/album/)
+- [Cale Mooth](https://midnightcheese.com)
+- [Chris Glass](https://chrisglass.com/album/)
 - [Daniel Warshaw](https://danielwarshaw.com/archive/)
 - [Ethan Marcotte](https://ethanmarcotte.com/wrote/)
 - [Frank Chimero](https://frankchimero.com)
-- [Hi, this is torrez.org](http://torrez.org/)
-- [Jonnie Hallman (@destroytoday)](https://destroytoday.com/blog)
+- [Jason Coleman](https://www.jasoncoleman.net)
+- [Jonnie Hallman](https://destroytoday.com/blog)
 - [Josh Mock](https://joshmock.com)
 - [Kenton Glass](https://kenton.glass/articles)
+- [Mandy Brown](https://aworkinglibrary.com)
 - [Mat Marrash](https://marrash.com/blog/)
-- [Midnight Cheese](https://midnightcheese.com)
-- [PULPHOPE](https://pulphope.blogspot.com)
+- [Paul Pope](https://pulphope.blogspot.com)
 - [Ray Larose](https://www.raylarose.com/words/)
 - [Scott McCloud](http://scottmccloud.com)
-- [ShaunInman.com](https://shauninman.com/archive/)
-- [super-structure - All the makings of a real web site, plus my stuff.](https://www.jasoncoleman.net)
-- [Teju Cole: On Photography - The New York Times](https://www.nytimes.com/column/on-photography)
-- [The Film Photography Project](https://filmphotographyproject.com/content/news/)
-- [tyler.io](https://tyler.io)
+- [Shaun Inman](https://shauninman.com/archive/)
+- [Take Kayo](http://www.bigheadtaco.com)
+- [Teju Cole](https://www.nytimes.com/column/on-photography)
+- [Tyler Hall](https://tyler.io)
 - [xkcd](https://xkcd.com)
 
 ---
