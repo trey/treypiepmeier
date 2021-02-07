@@ -4,20 +4,28 @@
     margin: 0;
 
     &__item {
-        &,
-        a,
-        span { display: inline-block; }
-
         a { color: $link-color; }
+
+        a,
+        span {
+            display: block;
+            padding: 0.5rem 1rem;
+        }
+
+        @include breakpoint('s') {
+            &,
+            a,
+            span { display: inline-block; }
+
+            a,
+            span { padding: 0.5rem; }
+        }
 
         &--current {
             background: darken($body-color, 15%);
 
             a { color: $text-color; }
         }
-
-        a,
-        span { padding: 0.5rem; }
 
         a:hover,
         a:focus {
