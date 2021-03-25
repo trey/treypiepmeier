@@ -1,6 +1,7 @@
 ---
 title: Transfer a Domain Name
 date: 2016-07-04
+tags: domains
 ---
 
 1. Make sure you have at least 14 days before the domain expires. Leaving a couple of days extra for mishaps is a **good idea**.
