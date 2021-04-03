@@ -2,5 +2,5 @@
 {% capture altCaption %}{% if alt %}{{ alt }}{% else %}{{ caption }}{% endif %}{% endcapture %}
 
 {%- if link -%}<a href="{{ link }}">{%- endif -%}
-    {% responsiveImage fullPath, altCaption, imgTitle, width, height %}
+    {% responsiveImage section, fullPath, altCaption, imgTitle, width, height %}
 {%- if link -%}</a>{%- endif -%}
