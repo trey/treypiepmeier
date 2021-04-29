@@ -1,6 +1,7 @@
 ---
 title: Shame
 date: 2020-07-27
+tags: politics
 ---
 
 I recently listened to a piece on NPR titled [“Why Shame Is A Bad Public Health Tool — Especially In A Pandemic.”](https://www.npr.org/2020/07/23/894556787/why-shame-is-a-bad-public-health-tool-especially-in-a-pandemic) It helped me to think about things in that perspective. [I’ve been feeling very angry](https://twitter.com/trey/status/1286036735114305537) about people not wearing masks. Very indignant and upset at my country and a whole lot of people in it. Hearing a plea to not think of things in an absolutist/black-and-white mindset, and to focus our anger at institutional failings rather than individual ones, made me feel a little better in my heart.
