@@ -10,6 +10,10 @@
         {%- if page.url != '/' %} / {% endif %}Trey Piepmeier
         {{- '' -}}
     </title>
+    <script type="module">
+        document.documentElement.classList.remove('no-js');
+        document.documentElement.classList.add('has-js');
+    </script>
     <meta name="description" content="{{ renderData.description or description or metadata.description }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {%- if section == 'words' or section == 'solutions' %}
@@ -61,5 +65,13 @@
     <footer>
         <p>Copyright &copy; 2006&ndash;2021 Arthur Piepmeier III. All rights reserved. <a href="https://github.com/trey/treypiepmeier">View source.</a></p>
     </footer>
+
+    <script>
+        const buttons = document.querySelectorAll('.nav__item--current button');
+
+        Array.prototype.forEach.call(buttons, function(button, i){
+            button.addEventListener('click', () => button.closest('.nav').classList.toggle('open'));
+        });
+    </script>
 </body>
 </html>

@@ -4,18 +4,20 @@
     margin: 0;
 
     &__item {
-        a { color: $link-color; }
+        display: flex;
+        justify-content: space-between;
 
         a,
         span {
-            display: block;
+            display: flex;
+            flex-grow: 1;
             padding: 0.5rem 1rem;
         }
 
         @include breakpoint('s') {
             &,
             a,
-            span { display: inline-block; }
+            span { display: inline-flex; }
 
             a,
             span { padding: 0.5rem; }
@@ -27,10 +29,58 @@
             a { color: $text-color; }
         }
 
-        a:hover,
-        a:focus {
-            background: #333;
-            color: $text-color;
+        a {
+            color: $link-color;
+
+            &:hover,
+            &:focus {
+                background: #333;
+                color: $text-color;
+            }
         }
+
+        button {
+            display: none;
+            background: none;
+            border: none;
+            padding: 0.5rem 1rem;
+            align-items: center;
+
+            svg { fill: white; }
+        }
+    }
+}
+
+// Collapsing nav on mobile.
+.has-js {
+    .nav__item {
+        &:not(.nav__item--current) {
+            display: none;
+
+            @include breakpoint('s') {
+                display: inline-flex;
+            }
+        }
+
+        button {
+            display: inline-flex;
+            cursor: pointer;
+
+            @include breakpoint('s') {
+                display: none;
+            }
+        }
+    }
+
+    .open .nav__item {
+        &:not(.nav__item--current) {
+            display: flex;
+
+            @include breakpoint('s') {
+                display: inline-flex;
+            }
+        }
+
+        button { transform: rotateX(180deg); }
     }
 }

@@ -18,6 +18,7 @@ I’ve worked on some random projects over the years including a [Stephen King C
 - Email by [Fastmail](/solutions/2021/03/email-for-your-domain/).
 - Code syntax highlighting styles from [Prism](https://prismjs.com) and [Dracula](https://draculatheme.com/).
 - Social network icons from [Simple Icons](https://simpleicons.org).
+- Navigation arrow from [GitHub’s Octicons](https://primer.style/octicons/chevron-down-16).
 - Still using [Normalize.css](http://necolas.github.io/normalize.css/) for some reason.
 - I used [PNG to JPG](https://png2jpg.com) on that little homepage image.
 +++
