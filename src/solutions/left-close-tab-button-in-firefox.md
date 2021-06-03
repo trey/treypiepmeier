@@ -4,6 +4,12 @@ date: 2019-09-26
 tags: browser
 ---
 
+Update _Thursday, June 3, 2021_:
+
+With [the new version of Firefox](https://www.mozilla.org/en-US/firefox/89.0/releasenotes/), it's probably no longer worth fighting the non-Mac right-side close buttons. Oh well.
+
+---
+
 As a good and loyal Mac user, I know that the little button to close a tab (or window or modal dialog, etc.) should be on the left, not the right. Here’s how you can make Firefox a little less ugly.
 
 {% include components/figure name: 'safari-tab.png' alt: 'Safari tab' caption: 'Safari. So pretty.' width: 409 height: 41 %}
