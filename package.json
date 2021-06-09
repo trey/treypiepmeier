@@ -23,7 +23,7 @@
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.0",
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
     "eslint": "^7.23.0",
-    "luxon": "^1.26.0",
+    "luxon": "^1.27.0",
     "markdown-it-collapsible": "^1.0.0",
     "markdown-it-footnote": "^3.0.2",
     "npm-run-all": "^4.1.5",
