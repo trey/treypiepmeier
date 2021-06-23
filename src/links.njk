@@ -2,12 +2,19 @@
 layout: layouts/base
 title: Links
 sectionBase: true
+bodyClass: posts
 ---
 
 <h1>{{ title }}</h1>
 
-<ul>
+<ul class="posts">
 {% for link in collections.links %}
-    <li><a href="{{ link.url }}">{{ link.data.title }}</a></li>
+    <li class="post">
+        <div class="post__url">
+            <a href="{{ link.url | url }}" class="postlist-link">{% if link.data.title %}{{ link.data.title }}{% else %}<code>{{ link.url }}</code>{% endif %}</a>
+            <a title="Direct link to “{{ link.data.title }}”" href="{{ link.data.href | url }}">&star;</a>
+        </div>
+        <div class="post__date">{{ link.data.date | midDateISO }}</div>
+    </li>
 {% endfor %}
 </ul>
