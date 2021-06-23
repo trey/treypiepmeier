@@ -20,3 +20,6 @@ eleventyComputed:
 <div class="post-date"><i>{{ date | fullDateISO }}</i></div>
 
 {{ link.extended | safe }}
+
+{% set collection = collections.links %}
+{% include 'components/post-nav.njk' %}
