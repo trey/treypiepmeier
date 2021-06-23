@@ -7,6 +7,7 @@
         {{- renderData.title or title or metadata.title }}
         {%- if section == 'words' and not sectionBase %} / Trey’s Thoughts{% endif %}
         {%- if section == 'solutions' and not sectionBase %} / Solutions Log{% endif %}
+        {%- if section == 'links' and not sectionBase %} / Links{% endif %}
         {%- if page.url != '/' %} / {% endif %}Trey Piepmeier
         {{- '' -}}
     </title>

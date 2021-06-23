@@ -22,6 +22,7 @@
     "@11ty/eleventy-plugin-rss": "^1.1.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.1",
     "@jamshop/eleventy-plugin-typography": "^1.0.0",
+    "dotenv": "^10.0.0",
     "eslint": "^7.29.0",
     "luxon": "^1.27.0",
     "markdown-it-collapsible": "^1.0.0",

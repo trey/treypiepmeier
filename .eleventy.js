@@ -7,7 +7,7 @@ const typographyPlugin = require('@jamshop/eleventy-plugin-typography');
 
 module.exports = function(eleventyConfig) {
     let markdownIt = require('markdown-it');
-    let markdownLib = markdownIt({ html: true, typographer: true })
+    let markdownLib = markdownIt({ html: true, typographer: true, linkify: true, })
         .use(require('markdown-it-footnote'))
         .use(require('markdown-it-collapsible'));
 
@@ -35,11 +35,17 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('fullDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
     });
+    eleventyConfig.addFilter('fullDateISO', dateObj => {
+        return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
+    });
     eleventyConfig.addFilter('midDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLLL dd, yyyy');
     });
     eleventyConfig.addFilter('shortDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
+    });
+    eleventyConfig.addFilter('shortDateISO', dateObj => {
+        return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
 
     // Make 404 page work with `eleventy --serve`

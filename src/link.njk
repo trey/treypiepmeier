@@ -1,0 +1,21 @@
+---
+pagination:
+  data: links
+  size: 1
+  alias: link
+  addAllPagesToCollections: true
+layout: layouts/base
+tags: links
+permalink: '/links/{{ link.time | shortDateISO }}_{{ link.description | slug }}/'
+templateEngineOverride: md, njk
+eleventyComputed:
+  title: '{{ link.description }}'
+  date: '{{ link.time }}'
+  section: links
+---
+
+<h1><a href="/links/">&larr;</a> <a href="{{ link.href }}">{{ link.description | widont | safe }}</a></h1>
+
+<div class="post-date"><i>{{ date | fullDateISO }}</i></div>
+
+{{ link.extended | safe }}
