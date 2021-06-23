@@ -9,7 +9,7 @@ bodyClass: posts
 <h1>{{ title }}</h1>
 
 <ul class="posts">
-{% for link in collections.links %}
+{% for link in collections.links | reverse %}
     <li class="post">
         <div class="post__url">
             <a href="{{ link.url | url }}" class="postlist-link">{% if link.data.title %}{{ link.data.title }}{% else %}<code>{{ link.url }}</code>{% endif %}</a>
