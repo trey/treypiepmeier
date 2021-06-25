@@ -7,7 +7,7 @@ pagination:
 layout: layouts/links
 tags: links
 permalink: '/links/{{ link.time | shortDateISO }}_{{ link.description | slug }}/'
-templateEngineOverride: md, njk
+templateEngineOverride: liquid
 eleventyComputed:
   title: '{{ link.description }}'
   date: '{{ link.time }}'

@@ -12,21 +12,15 @@
     </author>
     {%- for post in collection | reverse %}
     {%- set absolutePostUrl -%}{{ post.url | url | absoluteUrl(metadata.url) }}{%- endset -%}
-    {%- set commentLink -%}
-    <p><a href="mailto:boss+rss@treylabs.com?subject=Reply%20to:%20“{{ post.data.title }}.”">Reply via email</a></p>
-    {%- endset -%}
-    {%- set permalink -%}
-    <hr /><p><a title="Permanent link to “{{ post.data.title }}”" href="{{ absolutePostUrl }}">This page on treypiepmeier.com.</a></p>
-    {%- endset -%}
+    {%- set commentLink -%}<p><a href="mailto:boss+rss@treylabs.com?subject=Reply%20to:%20“{{ post.data.title }}.”">Reply via email</a></p>{%- endset -%}
+    {%- set permalink -%}<hr /><p><a href="{{ absolutePostUrl }}">View this page on treypiepmeier.com.</a></p>{%- endset -%}
     <entry>
         <title>{{ post.data.title }}</title>
         <link href="{{ post.data.href }}"/>
         <updated>{{ post.date | rssDate }}</updated>
         <id>{{ absolutePostUrl }}</id>
         <content type="html">
-            {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-            {{ permalink }}
-            {{ commentLink }}
+            {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }}{{ permalink | safe }}{{ commentLink | safe }}
         </content>
     </entry>
     {%- endfor %}
