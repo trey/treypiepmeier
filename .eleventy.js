@@ -10,6 +10,7 @@ module.exports = function(eleventyConfig) {
     let markdownLib = markdownIt({ html: true, typographer: true, linkify: true, })
         .use(require('markdown-it-footnote'))
         .use(require('markdown-it-collapsible'));
+    const md = new markdownIt();
 
     eleventyConfig.addWatchTarget('src/scss');
     eleventyConfig.setLibrary('md', markdownLib);
@@ -50,6 +51,8 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addFilter('shortDateISO', dateObj => {
         return DateTime.fromISO(dateObj, { zone: 'utc' }).toFormat('yyyy-LL-dd');
     });
+
+    eleventyConfig.addFilter('markdown', value => md.render(value));
 
     // Make 404 page work with `eleventy --serve`
     eleventyConfig.setBrowserSyncConfig({
