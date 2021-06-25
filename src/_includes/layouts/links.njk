@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+section: links
+---
+
+<h1><a href="{{ link.href }}">{{ link.description | widont | safe }}</a></h1>
+
+<div class="post-date"><i>{{ date | fullDateISO }}</i></div>
+
+<div>
+{{ content | safe }}
+</div>
+
+{% set collection = collections.links %}
+{% include 'components/post-nav.njk' %}

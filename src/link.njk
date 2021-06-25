@@ -4,7 +4,7 @@ pagination:
   size: 1
   alias: link
   addAllPagesToCollections: true
-layout: layouts/base
+layout: layouts/links
 tags: links
 permalink: '/links/{{ link.time | shortDateISO }}_{{ link.description | slug }}/'
 templateEngineOverride: md, njk
@@ -12,14 +12,6 @@ eleventyComputed:
   title: '{{ link.description }}'
   date: '{{ link.time }}'
   href: '{{ link.href }}'
-  section: links
 ---
 
-<h1><a href="{{ link.href }}">{{ link.description | widont | safe }}</a></h1>
-
-<div class="post-date"><i>{{ date | fullDateISO }}</i></div>
-
-{{ link.extended | safe }}
-
-{% set collection = collections.links %}
-{% include 'components/post-nav.njk' %}
+{{ link.extended }}
