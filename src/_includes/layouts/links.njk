@@ -3,7 +3,7 @@ layout: layouts/base.njk
 section: links
 templateEngineOverride: njk, md
 eleventyComputed:
-  date: '{{ page.date }}'
+  date: '{{ link.data.date }}'
 ---
 
 <h1><a href="{{ link.href }}">{{ link.description | widont | safe }}</a></h1>
