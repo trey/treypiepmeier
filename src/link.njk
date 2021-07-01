@@ -10,7 +10,7 @@ permalink: '/links/{{ link.time | shortDateISO }}_{{ link.description | slug }}/
 templateEngineOverride: liquid
 eleventyComputed:
   title: '{{ link.description }}'
-  date: '{{ link.time }}'
+  postDate: '{{ link.time }}'
   href: '{{ link.href }}'
 ---
 

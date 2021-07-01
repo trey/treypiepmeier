@@ -15,7 +15,7 @@ bodyClass: posts
             <a href="{{ link.url | url }}" class="postlist-link">{% if link.data.title %}{{ link.data.title }}{% else %}<code>{{ link.url }}</code>{% endif %}</a>
             <a title="Direct link to “{{ link.data.title }}”" href="{{ link.data.href | url }}">&star;</a>
         </div>
-        <div class="post__date">{{ link.data.date | midDateISO }}</div>
+        <div class="post__date">{{ link.data.postDate | midDateISO }}</div>
     </li>
 {% endfor %}
 </ul>

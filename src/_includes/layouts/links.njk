@@ -6,7 +6,7 @@ templateEngineOverride: njk, md
 
 <h1><a href="{{ link.href }}">{{ link.description | widont | safe }}</a></h1>
 
-<div class="post-date"><i>{{ date | fullDateISO }}</i></div>
+<div class="post-date"><i>{{ postDate | fullDateISO }}</i></div>
 
 <div>
 {{ content | safe }}
