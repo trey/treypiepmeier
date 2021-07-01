@@ -33,7 +33,9 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 
     eleventyConfig.addCollection('links', collectionApi => {
-        return collectionApi.getFilteredByTags('links');
+        return collectionApi.getFilteredByTags('links').sort(
+            (a, b) => { return b.postDate - a.postDate; }
+        );
     });
 
     // https://moment.github.io/luxon/docs/manual/parsing.html#parsing-technical-formats
