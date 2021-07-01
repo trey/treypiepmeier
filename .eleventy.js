@@ -33,8 +33,13 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 
     eleventyConfig.addCollection('links', collectionApi => {
-        return collectionApi.getFilteredByTags('links').sort(
-            (a, b) => { return b.postDate - a.postDate; }
+        return [...collectionApi.getFilteredByTags('links')].sort(
+            (a, b) => {
+                const aDate = DateTime.fromISO(a.data.postDate);
+                const bDate = DateTime.fromISO(b.data.postDate);
+
+                return aDate - bDate;
+            }
         );
     });
 
