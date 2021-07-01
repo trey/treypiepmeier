@@ -12,5 +12,5 @@ templateEngineOverride: njk, md
 {{ content | safe }}
 </div>
 
-{% set collection = collections.links %}
+{% set collection = collections.links | reverse %}
 {% include 'components/post-nav.njk' %}

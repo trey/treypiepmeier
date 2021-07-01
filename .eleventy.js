@@ -32,6 +32,10 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addCollection('tagList', require('./getTagList'));
 
+    eleventyConfig.addCollection('links', collectionApi => {
+        return collectionApi.getFilteredByTags('links');
+    });
+
     // https://moment.github.io/luxon/docs/manual/parsing.html#parsing-technical-formats
     eleventyConfig.addFilter('fullDate', dateObj => {
         return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('cccc, LLLL dd, yyyy');
