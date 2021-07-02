@@ -1,0 +1,7 @@
+<ul class="social">
+{% for item in social -%}
+    {%- set id = item.id %}
+    {%- set title = item.title %}
+    <li><a href="{{ item.url }}" aria-label="{{ item.name }}">{%- include 'components/icon.liquid' %}</a></li>
+{% endfor -%}
+</ul>

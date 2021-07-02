@@ -65,6 +65,15 @@ module.exports = function(eleventyConfig) {
 
     eleventyConfig.addFilter('markdown', value => md.render(value));
 
+    // Get the first `n` elements of a collection.
+    eleventyConfig.addFilter('head', (array, n) => {
+        if( n < 0 ) {
+            return array.slice(n);
+        }
+
+        return array.slice(0, n);
+    });
+
     // Make 404 page work with `eleventy --serve`
     eleventyConfig.setBrowserSyncConfig({
         callbacks: {

@@ -1,0 +1,19 @@
+{% set words = collections.words | head(-1) %}
+{% set solutions = collections.solutions | head(-1) %}
+{% set links = collections.links | head(-1) %}
+
+<hr />
+
+<h2>The latest stuff…</h2>
+
+<ul>
+    <li><a href="/words/">Words</a>
+        <ul><li><a href="{{ words[0].url }}">{{ words[0].data.title }}</a> <small>({{ words[0].data.date | midDate }})</small></li></ul>
+    </li>
+    <li><a href="/solutions/">Solutions</a>
+        <ul><li><a href="{{ solutions[0].url }}">{{ solutions[0].data.title }}</a> <small>({{ solutions[0].data.date | midDate }})</small></li></ul>
+    </li>
+    <li><a href="/links/">Links</a>
+        <ul><li><a href="{{ links[0].url }}">{{ links[0].data.title }}</a> <small>({{ links[0].data.postDate | midDateISO }})</small></li></ul>
+    </li>
+</ul>
