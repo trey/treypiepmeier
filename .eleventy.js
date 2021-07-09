@@ -10,7 +10,7 @@ module.exports = function(eleventyConfig) {
     let markdownLib = markdownIt({ html: true, typographer: true, linkify: true, })
         .use(require('markdown-it-footnote'))
         .use(require('markdown-it-collapsible'));
-    const md = new markdownIt();
+    const md = new markdownIt({ linkify: true });
 
     eleventyConfig.addWatchTarget('src/scss');
     eleventyConfig.setLibrary('md', markdownLib);
