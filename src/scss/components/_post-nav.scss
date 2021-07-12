@@ -1,12 +1,17 @@
 .post-nav {
-    display: flex;
-    justify-content: space-between;
     list-style: none;
     margin-top: 5rem;
     padding: 0;
 
+    .prev,
+    .next {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
     .prev {
         text-align: right;
         margin-left: 0.5rem;
+        float: right;
     }
 }
