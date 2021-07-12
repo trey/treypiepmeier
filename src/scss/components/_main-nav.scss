@@ -23,20 +23,18 @@
             span { padding: 0.5rem; }
         }
 
+        a { color: $link-color; }
+
         &--current {
             background: darken($body-color, 15%);
 
             a { color: $text-color; }
         }
 
-        a {
-            color: $link-color;
-
-            &:hover,
-            &:focus {
-                background: #333;
-                color: $text-color;
-            }
+        a:hover,
+        a:focus {
+            background: #333;
+            color: $text-color;
         }
 
         button {
