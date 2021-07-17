@@ -29,7 +29,7 @@ Good websites. I recommend subscribing using [Feedbin](https://feedbin.com).
 - [Shaun Inman](https://shauninman.com/archive/)
 - [Simon Willison](https://simonwillison.net)
 - [Take Kayo](https://www.bigheadtaco.com)
-- [Teju Cole](https://www.nytimes.com/column/on-photography)
+- [Teju Cole](https://www.nytimes.com/by/teju-cole)
 - [Tom MacWright](https://macwright.com)
 - [Tyler Hall](https://tyler.io)
 - [xkcd](https://xkcd.com)
