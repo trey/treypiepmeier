@@ -8,6 +8,10 @@ bodyClass: posts
 
 <h1>{{ title }}</h1>
 
+<p><i>Get notified of new stuff with <a href="/feeds/links.xml">RSS</a> or <a href="https://twitter.com/treyslinks">Twitter</a>.</i></p>
+
+<hr />
+
 <ul class="posts">
 {% for link in collections.links | reverse %}
     <li class="post">
