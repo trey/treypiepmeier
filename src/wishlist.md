@@ -21,4 +21,4 @@ layout: layouts/base.njk
     - 24.75” sleeve
     - 15.75” neck
 - Pants
-    - 36” × 30”(or 32” if 30” length isn’t available)
+    - 34” × 30” (or 32” if 30” length isn’t available)
