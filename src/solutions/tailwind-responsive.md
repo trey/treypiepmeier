@@ -10,7 +10,7 @@ The (normally wonderful) [official documentation](https://tailwindcss.com/docs/f
 
 ```css
 @responsive {
-  .custom-class {
+  .folded-corner {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%, 0% 80%);
   }
 }
