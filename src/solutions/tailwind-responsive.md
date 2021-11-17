@@ -41,3 +41,5 @@ Then you can use it like so…
 ```
 
 A simple example like that ought to be added to the Tailwind documentation. 😀
+
+Thanks to [this post and video](https://web-crunch.com/posts/how-to-extend-tailwind-css) for helping me understand.
