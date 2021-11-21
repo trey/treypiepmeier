@@ -11,10 +11,9 @@ layout: layouts/base.njk
 - [Nintendo](https://www.nintendo.com/giftcards/)
 - [Bookshop](https://bookshop.org/wishlists/b08a78238ff76845722fbf65beee92b03837a2f3)
     - [Gift card](https://bookshop.org/gift_cards)
-- [Harvard Book Store](https://www.harvard.com/gift_cards_goods/gift_cards/)
-<!--
-- [Adorama](https://www.adorama.com/nspc/sharewishlist?wishlistid=58ac7fff-95e9-4fb4-ab3f-483dde968505)
--->
+- [Apple](https://www.apple.com/shop/buy-giftcard/giftcard)
+<!-- - [Harvard Book Store](https://www.harvard.com/gift_cards_goods/gift_cards/) -->
+<!-- - [Adorama](https://www.adorama.com/nspc/sharewishlist?wishlistid=58ac7fff-95e9-4fb4-ab3f-483dde968505) -->
 
 ---
 
