@@ -8,6 +8,7 @@ layout: layouts/base.njk
 - [Amazon](http://a.co/5le1mRp)
 - [B&H](https://www.bhphotovideo.com/find/wishlist.jsp#/863AEFE068/)
     - [Gift card](https://www.bhphotovideo.com/find/eGiftCard.jsp)
+- [Nintendo](https://www.nintendo.com/giftcards/)
 - [Bookshop](https://bookshop.org/wishlists/b08a78238ff76845722fbf65beee92b03837a2f3)
     - [Gift card](https://bookshop.org/gift_cards)
 - [Harvard Book Store](https://www.harvard.com/gift_cards_goods/gift_cards/)
