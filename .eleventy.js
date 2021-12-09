@@ -21,6 +21,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addPassthroughCopy('src/img/sprite.svg');
     eleventyConfig.addPassthroughCopy('src/img/**/*.gif');
     eleventyConfig.addPassthroughCopy('src/robots.txt');
+    eleventyConfig.addPassthroughCopy('_redirects');
 
     // Allow directory json files to add tags to files.
     eleventyConfig.setDataDeepMerge(true);

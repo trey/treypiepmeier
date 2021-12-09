@@ -22,9 +22,5 @@
     {
         "name": "About",
         "url": "/about/"
-    },
-    {
-        "name": "Hire me!",
-        "url": "/hire-me/"
     }
 ]
