@@ -4,9 +4,13 @@ date: 2019-09-26
 tags: browser
 ---
 
-Update _Thursday, June 3, 2021_:
+Update _Friday, December 31, 2021_:
 
-With [the new version of Firefox](https://www.mozilla.org/en-US/firefox/89.0/releasenotes/), it's probably no longer worth fighting the non-Mac right-side close buttons. Oh well.
+Ok, maybe [this solution](https://gist.github.com/biosmanager/93544485fb0da3ad0577856186b9b3e8) is pretty alright ([via](https://www.reddit.com/r/firefox/comments/nriwz5/close_tab_button_on_left_side_for_macos/)). I've updated the code in this post with that.
+
+~~Update _Thursday, June 3, 2021_:~~
+
+~~With [the new version of Firefox](https://www.mozilla.org/en-US/firefox/89.0/releasenotes/), it's probably no longer worth fighting the non-Mac right-side close buttons. Oh well.~~
 
 ---
 
@@ -32,20 +36,21 @@ As a good and loyal Mac user, I know that the little button to close a tab (or w
 .tabbrowser-tab .tab-icon-overlay,
 .tabbrowser-tab .tab-label-container,
 .tabbrowser-tab .tab-icon-sound {
-    -moz-box-ordinal-group: 2 !important;
+  -moz-box-ordinal-group: 2 !important;
 }
 .tabbrowser-tab .tab-close-button {
-    margin-left: -2px !important;
-    margin-right: 4px !important;
+  margin-left: -5.5px !important;
+  margin-right: 3px !important;
 }
-.tabbrowser-tab:not([pinned=“true”]):hover .tab-close-button {
-    display: -moz-box !important;
+.tabbrowser-tab:not([pinned="true"]):hover .tab-close-button {
+  display: -moz-box !important;
 }
-.tabbrowser-tab:not([pinned=“true”]):hover .tab-icon-image {
-    display: none;
+.tabbrowser-tab:not([pinned="true"]):hover .tab-icon-image,
+.tabbrowser-tab:not([pinned="true"]):hover .tab-throbber {
+  display: none;
 }
 .tab-close-button {
-    display: none;
+  display: none;
 }
 ```
 
